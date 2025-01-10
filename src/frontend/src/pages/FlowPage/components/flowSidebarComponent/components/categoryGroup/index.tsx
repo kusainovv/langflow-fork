@@ -19,10 +19,12 @@ export const CategoryGroup = memo(function CategoryGroup({
   onDragStart,
   sensitiveSort,
 }: CategoryGroupProps) {
+  // Comment here
   return (
     <SidebarGroup className="p-3">
       <SidebarGroupContent>
         <SidebarMenu>
+          
           {CATEGORIES.toSorted(
             (a, b) =>
               (search !== "" ? sortedCategories : CATEGORIES).findIndex(
