@@ -1,12 +1,9 @@
-# FROM langflowai/langflow-backend as backend_build
-
-FROM python:3.10-slim
+FROM langflowai/langflow-backend as backend_build
 WORKDIR /app
 
 RUN apt-get update && apt-get install git -y
 
-COPY . .
-# COPY --from=backend_build /app/dist/*.whl /app/
+COPY --from=backend_build /app/dist/*.whl /app/
 RUN pip install langflow-*.whl
 RUN rm *.whl
 
