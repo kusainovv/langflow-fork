@@ -1,43 +1,43 @@
 from langchain_core.tools import Tool
-from langflow.base.langchain_utilities.model import LCToolComponent
 from langflow.inputs import IntInput, SecretStrInput
-from langflow.schema import Data
+# from langflow.schema import Data
+from langflow.io import DropdownInput, MessageInput, MessageTextInput
+from langflow.template import Output
+from langflow.custom import Component
+from langflow.schema import Data, Message
+import json
+
 import requests
 
 
-class UsersAPIComponent(LCToolComponent):
+class UsersAPIComponent(Component):
     display_name = "Users API"
-    description = "Get users by API."
+    description = "Get user information from API by ID."
     name = "UsersAPI"
     icon = "User"
+
     inputs = [
-        IntInput(name="user_id", display_name="User ID", required=True),
+        MessageTextInput(
+            name="given_user_id",
+            display_name="User Id",
+            info="A given user id.",
+        ),
     ]
 
-    def _fetch_user_data(self, user_id: int) -> dict:
+    outputs = [
+        Output(name="user_information", display_name="User Information", method="fetch_user_data"),    
+    ] 
+
+    def fetch_user_data(self) -> Message:        
         """
         Fetch user data from JSONPlaceholder by user ID.
         """
+        user_id = self.given_user_id
+
         url = f"https://jsonplaceholder.typicode.com/users/{user_id}"
         response = requests.get(url)
-        if response.status_code == 200:
-            return response.json()
-        return {"error": f"User with ID {user_id} not found."}
+        data = response.json()
+        result = json.dumps(data)
 
-    def run_model(self) -> Data:
-        """
-        Run the tool to fetch user data.
-        """
-        result = self._fetch_user_data(user_id=self.user_id)
-        self.status = result
-        return Data(data=result, text=str(result))
-
-    def build_tool(self) -> Tool:
-        """
-        Build the LangChain Tool object.
-        """
-        return Tool(
-            name="users_api",
-            description="Fetch user details by user ID from JSONPlaceholder.",
-            func=self.run_model,
-        )
+        return result
+   
