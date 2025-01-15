@@ -376,13 +376,13 @@ export function FlowSidebarComponent() {
           <NoResultsMessage onClearSearch={handleClearSearch} />
         )}
       </SidebarContent>
-      <SidebarFooter className="border-t p-4 py-3">
+      {/* <SidebarFooter className="border-t p-4 py-3">
         <SidebarMenuButtons
           hasStore={hasStore}
           customComponent={customComponent}
           addComponent={addComponent}
         />
-      </SidebarFooter>
+      </SidebarFooter> */}
     </Sidebar>
   );
 }

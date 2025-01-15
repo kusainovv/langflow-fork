@@ -79,7 +79,7 @@ export default function AppHeader(): JSX.Element {
 
       {/* Right Section */}
       <div className={`flex items-center gap-2`}>
-        {!ENABLE_DATASTAX_LANGFLOW && (
+        {/* {!ENABLE_DATASTAX_LANGFLOW && (
           <>
             <Button
               unstyled
@@ -91,7 +91,7 @@ export default function AppHeader(): JSX.Element {
               <GithubStarComponent />
             </Button>
           </>
-        )}
+        )} */}
         <AlertDropdown
           notificationRef={notificationContentRef}
           onClose={() => setActiveState(null)}
@@ -131,7 +131,7 @@ export default function AppHeader(): JSX.Element {
             </AlertDropdown>
           </ShadTooltip>
         </AlertDropdown>
-        {!ENABLE_DATASTAX_LANGFLOW && (
+        {/* {!ENABLE_DATASTAX_LANGFLOW && (
           <>
             <ShadTooltip
               content="Go to LangflowStore"
@@ -204,7 +204,7 @@ export default function AppHeader(): JSX.Element {
               className="my-auto h-7 dark:border-zinc-700"
             />
           </>
-        )}
+        )} */}
         <div className="flex">
           <AccountMenu />
         </div>

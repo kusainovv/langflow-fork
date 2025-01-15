@@ -10,6 +10,7 @@ import { getIconName } from "./components/helpers/get-icon-name";
 import CustomInputPopover from "./components/popover";
 import CustomInputPopoverObject from "./components/popoverObject";
 
+// icons and etc
 export default function InputComponent({
   autoFocus = false,
   onBlur,

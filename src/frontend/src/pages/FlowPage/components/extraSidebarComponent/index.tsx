@@ -29,7 +29,7 @@ export default function ExtraSidebar(): JSX.Element {
   const templates = useTypesStore((state) => state.templates);
   const getFilterEdge = useFlowStore((state) => state.getFilterEdge);
   const setFilterEdge = useFlowStore((state) => state.setFilterEdge);
-  const hasStore = useStoreStore((state) => state.hasStore);
+  const hasStore = false; // useStoreStore((state) => state.hasStore);
   const filterType = useFlowStore((state) => state.filterType);
 
   const featureFlags = useUtilityStore((state) => state.featureFlags);

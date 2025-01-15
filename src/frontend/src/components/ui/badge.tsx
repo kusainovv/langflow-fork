@@ -3,12 +3,12 @@ import * as React from "react";
 import { cn } from "../../utils/utils";
 
 const badgeVariants = cva(
-  "inline-flex items-center border rounded-full px-2.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+  "inline-flex items-center bg-silver px-4 transition-colors font-w95fa focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
   {
     variants: {
       variant: {
         default:
-          "bg-primary hover:bg-primary/80 border-transparent text-primary-foreground",
+          "bg-silver hover:bg-primary/80 border-transparent text-primary-foreground",
         gray: "bg-border hover:bg-border/80 text-secondary-foreground",
         secondary:
           "bg-secondary hover:bg-secondary/80 border-transparent text-secondary-foreground",
@@ -16,9 +16,6 @@ const badgeVariants = cva(
           "bg-destructive hover:bg-destructive/80 border-transparent text-destructive-foreground",
         outline: "text-primary/80 border-ring/60",
         secondaryStatic: "bg-muted text-muted-foreground border-0",
-        pinkStatic: "bg-accent-pink text-accent-pink-foreground border-0",
-        emerald:
-          "bg-accent-emerald text-accent-emerald-foreground hover:bg-accent-emerald-hover border-0",
         successStatic:
           "bg-accent-emerald text-accent-emerald-foreground border-0",
         errorStatic: "bg-error-background text-error-foreground border-0",
@@ -27,8 +24,8 @@ const badgeVariants = cva(
         sm: "h-4 text-xs",
         md: "h-5 text-sm",
         lg: "h-6 text-base",
-        sq: "h-6 px-1.5 text-sm font-medium rounded-md",
-        xq: "h-6 px-1.5 text-xs font-medium rounded-sm",
+        sq: "h-6 px-1.5 text-sm rounded-md",
+        xq: "h-6 px-1.5 text-xs rounded-sm",
       },
     },
     defaultVariants: {

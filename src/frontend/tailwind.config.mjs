@@ -88,6 +88,7 @@ const config = {
         "info-foreground": "var(--info-foreground)",
         "light-blue": "var(--light-blue)",
         "light-gray": "var(--light-gray)",
+        "silver": "var(--silver)",
         "navy": "var(--navy)",
         "light-slate": "var(--light-slate)",
         "medium-blue": "var(--medium-blue)",
@@ -269,14 +270,15 @@ const config = {
         1.5: "1.5px",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
         mono: ["var(--font-mono)", ...fontFamily.mono],
-        chivo: ["var(--font-chivo)", ...fontFamily.sans],
+        w95fa: ["var(--font-w95fa)"],
       },
       boxShadow: {
         "frozen-ring": "0 0 10px 2px rgba(128, 190, 230, 0.5)",
         node: "0 0px 15px -3px rgb(0 0 0 / 0.1), 0 0px 6px -4px rgb(0 0 0 / 0.1);",
         "frosted-ring": "0 0 10px 2px rgba(128, 190, 230, 0.7)",
+        "field": 'inset 1px 1px 0px 0px #808080, inset -2px -2px 0px 0px #C1C1C1, inset 2px 2px 0px 0px #000000',
+        "button": "inset 2px 2px 0px 0px rgba(223, 223, 223, 1), inset -2px -2px 0px 0px rgba(127, 127, 127, 1), inset 1px 1px 0px 0px rgba(255, 255, 255, 1), inset -1px -1px 0px 0px rgba(0, 0, 0, 1)",
       },
       backdropBlur: {
         xs: "2px",

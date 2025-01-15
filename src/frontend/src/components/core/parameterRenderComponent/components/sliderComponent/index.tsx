@@ -214,7 +214,7 @@ export default function SliderComponent({
                 onChange={handleInputChange}
                 onBlur={handleInputBlur}
                 onKeyDown={handleKeyDown}
-                className="relative bottom-[1px] w-full cursor-text rounded-sm bg-transparent text-center font-mono text-[0.88rem] arrow-hide"
+                className="relative bottom-[1px] w-full cursor-text rounded-sm bg-transparent text-center font-w95fa text-[0.88rem] arrow-hide"
                 autoFocus
                 data-testid="slider_input"
               />
@@ -225,7 +225,7 @@ export default function SliderComponent({
                   setInputValue(valueAsNumber.toFixed(2));
                 }}
                 data-testid={`default_slider_display_value${editNode ? "_advanced" : ""}`}
-                className="relative bottom-[1px] font-mono text-sm hover:cursor-text"
+                className="relative bottom-[1px] font-w95fa text-sm hover:cursor-text"
               >
                 {valueAsNumber.toFixed(2)}
               </span>
@@ -237,7 +237,7 @@ export default function SliderComponent({
         <div className="relative bottom-1 flex items-center pb-2">
           <span
             data-testid={`button_slider_display_value${editNode ? "_advanced" : ""}`}
-            className="font-mono text-2xl"
+            className="font-w95fa text-2xl"
           >
             {valueAsNumber.toFixed(2)}
           </span>

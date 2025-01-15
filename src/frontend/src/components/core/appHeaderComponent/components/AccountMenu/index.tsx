@@ -84,7 +84,7 @@ export const AccountMenu = () => {
                 )}
               </>
             )}
-            {ENABLE_DATASTAX_LANGFLOW ? (
+            {/* {ENABLE_DATASTAX_LANGFLOW ? (
               <HeaderMenuItemButton onClick={() => setIsFeedbackOpen(true)}>
                 Feedback
               </HeaderMenuItemButton>
@@ -92,10 +92,10 @@ export const AccountMenu = () => {
               <HeaderMenuItemLink newPage href="https://docs.langflow.org">
                 Docs
               </HeaderMenuItemLink>
-            )}
+            )} */}
           </HeaderMenuItemsSection>
           <HeaderMenuItemsSection>
-            {ENABLE_DATASTAX_LANGFLOW ? (
+            {/* {ENABLE_DATASTAX_LANGFLOW ? (
               <HeaderMenuItemLink
                 newPage
                 href="https://github.com/langflow-ai/langflow"
@@ -112,7 +112,7 @@ export const AccountMenu = () => {
               >
                 Share Feedback on Github
               </HeaderMenuItemLink>
-            )}
+            )} */}
             <HeaderMenuItemLink newPage href="https://twitter.com/langflow_ai">
               Follow Langflow on X
             </HeaderMenuItemLink>

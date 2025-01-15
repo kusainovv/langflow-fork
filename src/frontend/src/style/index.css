@@ -6,9 +6,8 @@
 
 @layer base {
   :root {
-    --font-sans: "w95fa", sans-serif;
+    --font-w95fa: "w95fa", sans-serif;
     --font-mono: "JetBrains Mono", monospace;
-    --font-chivo: "Chivo", sans-serif;
 
     --foreground: 0 0% 0%; /* hsl(0, 0%, 0%) */
     --background: 0 0% 100%; /* hsl(0, 0%, 100%) */

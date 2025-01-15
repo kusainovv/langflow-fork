@@ -37,8 +37,8 @@ const OptionBadge = ({
     | "errorStatic";
   className?: string;
   onRemove: (e: React.MouseEvent<HTMLButtonElement>) => void;
-}) => (
-  <Badge
+}) => {
+  return <Badge
     variant={
       variant as
         | "default"
@@ -52,7 +52,7 @@ const OptionBadge = ({
         | "successStatic"
         | "errorStatic"
     }
-    className={cn("flex items-center gap-1 truncate", className)}
+    className={cn("flex items-center gap-1 truncate border-none shadow-button", className)}
   >
     <div className="truncate">{option}</div>
     <X
@@ -63,7 +63,8 @@ const OptionBadge = ({
       data-testid="remove-icon-badge"
     />
   </Badge>
-);
+}
+
 
 const CommandItemContent = ({
   option,
@@ -217,7 +218,7 @@ const CustomInputPopover = ({
                   key={option}
                   option={option}
                   onRemove={(e) => handleRemoveOption(option, e)}
-                  className="rounded-[3px] p-1 font-mono"
+                  className="p-1 font-w95fa"
                 />
               ))}
             </div>
@@ -228,7 +229,7 @@ const CustomInputPopover = ({
               variant={nodeStyle ? "emerald" : "secondary"}
               className={cn(
                 editNode && "text-xs",
-                nodeStyle ? "rounded-[3px] px-1 font-mono" : "bg-muted",
+                nodeStyle ? "px-1 font-w95fa" : "bg-muted",
               )}
             />
           ) : null}
