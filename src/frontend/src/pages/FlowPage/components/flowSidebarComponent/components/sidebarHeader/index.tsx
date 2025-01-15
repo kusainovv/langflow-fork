@@ -34,7 +34,7 @@ export const SidebarHeaderComponent = memo(function SidebarHeaderComponent({
 }: SidebarHeaderComponentProps) {
   return (
     <SidebarHeader className="flex w-full flex-col gap-4 p-4 pb-1">
-      <Disclosure open={showConfig} onOpenChange={setShowConfig}>
+      {/* <Disclosure open={showConfig} onOpenChange={setShowConfig}>
         <div className="flex w-full items-center gap-2">
           <SidebarTrigger className="text-muted-foreground">
             <ForwardedIconComponent name="PanelLeftClose" />
@@ -65,7 +65,7 @@ export const SidebarHeaderComponent = memo(function SidebarHeaderComponent({
             setShowLegacy={setShowLegacy}
           />
         </DisclosureContent>
-      </Disclosure>
+      </Disclosure> */}
       <SearchInput
         searchInputRef={searchInputRef}
         isInputFocused={isInputFocused}

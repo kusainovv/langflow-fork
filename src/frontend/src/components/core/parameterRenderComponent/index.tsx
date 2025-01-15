@@ -20,6 +20,7 @@ import { StrRenderComponent } from "./components/strRenderComponent";
 import ToggleShadComponent from "./components/toggleShadComponent";
 import { InputProps } from "./types";
 
+// render components and buttons
 export function ParameterRenderComponent({
   handleOnNewValue,
   name,
@@ -91,6 +92,7 @@ export function ParameterRenderComponent({
           );
         }
       }
+      
       return (
         <StrRenderComponent
           {...baseInputProps}

@@ -1,5 +1,6 @@
 import ForwardedIconComponent from "@/components/common/genericIconComponent";
 import ShadTooltip from "@/components/common/shadTooltipComponent";
+import { Button } from "@/components/ui/button";
 import IOModal from "@/modals/IOModal/new-modal";
 
 const PlaygroundButton = ({ hasIO, open, setOpen, canvasOpen }) => {
@@ -10,13 +11,13 @@ const PlaygroundButton = ({ hasIO, open, setOpen, canvasOpen }) => {
   const ButtonLabel = () => <span className="hidden md:block">Playground</span>;
 
   const ActiveButton = () => (
-    <div
+    <Button
       data-testid="playground-btn-flow-io"
-      className="playground-btn-flow-toolbar hover:bg-accent"
+      className="playground-btn-flow-toolbar text-black hover:bg-accent"
     >
       <PlayIcon />
       <ButtonLabel />
-    </div>
+    </Button>
   );
 
   const DisabledButton = () => (

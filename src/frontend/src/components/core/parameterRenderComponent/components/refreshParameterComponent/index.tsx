@@ -49,13 +49,13 @@ export function RefreshParameterComponent({
     (children || templateData.refresh_button) && (
       <div
         className={cn(
-          "flex w-full items-center justify-center gap-3",
+          "flex all-unset",
           isFlexView ? "justify-end" : "justify-center",
         )}
       >
         {children}
         {templateData.refresh_button && (
-          <div className="shrink-0 flex-col">
+          <div className="all-unset bg-red-500">
             <RefreshButton
               isLoading={postTemplateValue.isPending}
               disabled={disabled}

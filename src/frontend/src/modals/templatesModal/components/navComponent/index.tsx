@@ -43,7 +43,7 @@ export function Nav({ categories, currentTab, setCurrentTab }: NavProps) {
 
         {categories.map((category, index) => (
           <SidebarGroup key={index}>
-            <SidebarGroupLabel
+            {/* <SidebarGroupLabel
               className={`${
                 index === 0
                   ? "hidden"
@@ -51,7 +51,7 @@ export function Nav({ categories, currentTab, setCurrentTab }: NavProps) {
               }`}
             >
               {category.title}
-            </SidebarGroupLabel>
+            </SidebarGroupLabel> */}
             <SidebarGroupContent>
               <SidebarMenu>
                 {category.items.map((link) => (

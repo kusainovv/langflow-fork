@@ -29,7 +29,7 @@ function RefreshButton({
     className,
     disabled ? "cursor-not-allowed" : "",
     !editNode ? "py-2.5 px-3" : "px-2 py-1",
-    "hit-area-icon group text-muted-foreground p-1",
+    // "hit-area-icon group text-muted-foreground p-1",
   );
 
   // icon class name should take into account the disabled state and the loading state

@@ -279,6 +279,7 @@ const config = {
         "frosted-ring": "0 0 10px 2px rgba(128, 190, 230, 0.7)",
         "field": 'inset 1px 1px 0px 0px #808080, inset -2px -2px 0px 0px #C1C1C1, inset 2px 2px 0px 0px #000000',
         "button": "inset 2px 2px 0px 0px rgba(223, 223, 223, 1), inset -2px -2px 0px 0px rgba(127, 127, 127, 1), inset 1px 1px 0px 0px rgba(255, 255, 255, 1), inset -1px -1px 0px 0px rgba(0, 0, 0, 1)",
+        "dropdown-item": "inset 2px 2px 0px 0px rgba(0,0,0,1.00), inset -2px -2px 0px 0px rgba(193,193,193,1.00), inset 1px 1px 0px 0px rgba(128,128,128,1.00), inset -1px -1px 0px 0px rgba(255,255,255,1.00)"
       },
       backdropBlur: {
         xs: "2px",

@@ -21,6 +21,7 @@ import {
   PopoverTrigger,
 } from "../../ui/popover";
 
+// here node dropdown input
 export default function Dropdown({
   disabled,
   isLoading,
@@ -88,7 +89,7 @@ export default function Dropdown({
           editNode
             ? "dropdown-component-outline input-edit-node"
             : "dropdown-component-false-outline py-2",
-          "w-full justify-between font-normal",
+          "w-full justify-between font-normal bg-white shadow-field",
         )}
       >
         <span className="truncate" data-testid={`value-dropdown-${id}`}>
@@ -196,6 +197,7 @@ export default function Dropdown({
       ) : (
         renderTriggerButton()
       )}
+      
       {renderPopoverContent()}
     </Popover>
   );

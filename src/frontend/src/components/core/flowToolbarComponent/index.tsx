@@ -15,7 +15,8 @@ import { useShortcutsStore } from "../../../stores/shortcuts";
 import { useStoreStore } from "../../../stores/storeStore";
 import { classNames, isThereModal } from "../../../utils/utils";
 import ForwardedIconComponent from "../../common/genericIconComponent";
-
+import { Button } from "@/components/ui/button";
+// right panel in react flow
 export default function FlowToolbar(): JSX.Element {
   const preventDefault = true;
   const [open, setOpen] = useState<boolean>(false);
@@ -120,7 +121,7 @@ export default function FlowToolbar(): JSX.Element {
       <Panel className="!m-2" position="top-right">
         <div
           className={
-            "hover:shadow-round-btn-shadow flex items-center justify-center gap-7 rounded-md border bg-background p-1.5 shadow transition-all"
+            "hover:shadow-round-btn-shadow flex items-center justify-center gap-7 rounded-md border bg-silver p-1.5 shadow transition-all"
           }
         >
           <div className="flex gap-1.5">
@@ -141,9 +142,9 @@ export default function FlowToolbar(): JSX.Element {
                       open={openCodeModal}
                       setOpen={setOpenCodeModal}
                     >
-                      <div
+                      <Button
                         className={classNames(
-                          "relative inline-flex h-8 w-full items-center justify-center gap-1.5 rounded px-3 py-1.5 text-sm font-semibold text-foreground transition-all duration-150 ease-in-out hover:bg-accent",
+                          "relative inline-flex h-full w-full items-center justify-center gap-1.5 text-sm text-black transition-all duration-150 ease-in-out hover:bg-accent",
                         )}
                       >
                         <ForwardedIconComponent
@@ -151,13 +152,13 @@ export default function FlowToolbar(): JSX.Element {
                           className={"h-4 w-4"}
                         />
                         <span className="hidden md:block">API</span>
-                      </div>
+                      </Button>
                     </ApiModal>
                   )}
                 </div>
               </>
             )}
-            {ENABLE_LANGFLOW_STORE && (
+            {/* {ENABLE_LANGFLOW_STORE && (
               <div className="flex items-center gap-2">
                 <div
                   className={`side-bar-button ${
@@ -169,7 +170,7 @@ export default function FlowToolbar(): JSX.Element {
                   {ModalMemo}
                 </div>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </Panel>
