@@ -76,11 +76,11 @@ const HideShowButton = memo(
               "icon-size",
               disabled
                 ? isToolMode
-                  ? "text-placeholder-foreground opacity-60"
-                  : "text-placeholder-foreground hover:text-foreground"
+                  ? "text-white"
+                  : "text-white hover:text-foreground"
                 : isToolMode
-                  ? "text-background hover:text-secondary-hover"
-                  : "text-placeholder-foreground hover:text-primary-hover",
+                  ? "text-white hover:text-secondary-hover"
+                  : "text-white hover:text-primary-hover",
             )}
           />
         </div>
@@ -118,11 +118,11 @@ const InspectButton = memo(
           "icon-size",
           isToolMode
             ? displayOutputPreview && !unknownOutput
-              ? "text-background hover:text-secondary-hover"
-              : "cursor-not-allowed text-placeholder-foreground opacity-80"
+              ? "text-white hover:text-secondary-hover"
+              : "cursor-not-allowed text-white"
             : displayOutputPreview && !unknownOutput
-              ? "text-foreground hover:text-primary-hover"
-              : "cursor-not-allowed text-placeholder-foreground opacity-60",
+              ? "text-white hover:text-primary-hover"
+              : "cursor-not-allowed text-white",
           errorOutput ? "text-destructive" : "",
         )}
       />
@@ -268,20 +268,19 @@ function NodeOutputField({
     <div
       ref={ref}
       className={cn(
-        "relative mt-1 flex h-11 w-full flex-wrap items-center justify-between bg-muted px-5 py-2",
-        lastOutput ? "rounded-b-[0.69rem]" : "",
+        "relative flex h-11 w-full flex-wrap items-center justify-between bg-navy px-5 py-2",
         isToolMode && "bg-primary",
       )}
     >
       <div className="flex w-full items-center justify-end truncate text-sm">
         <div className="flex flex-1">
-          <HideShowButton
+          {/* <HideShowButton
             disabled={disabledOutput}
             onClick={() => handleUpdateOutputHide()}
             hidden={!!data.node?.outputs![index].hidden}
             isToolMode={isToolMode}
             title={title}
-          />
+          /> */}
         </div>
 
         {data.node?.frozen && (
@@ -291,7 +290,7 @@ function NodeOutputField({
         )}
 
         <div className="flex items-center gap-2">
-          <span className={data.node?.frozen ? "text-ice" : ""}>
+          <span className={data.node?.frozen ? "text-white" : "text-white"}>
             <MemoizedOutputComponent
               proxy={outputProxy}
               idx={index}
