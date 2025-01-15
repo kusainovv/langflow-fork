@@ -563,7 +563,7 @@ export default function Page({ view }: { view?: boolean }): JSX.Element {
             onPaneClick={onPaneClick}
             onEdgeClick={handleEdgeClick}
           >
-            <Background size={2} gap={20} className="" />
+            {/* <Background size={2} gap={20} className="" /> */}
             {!view && (
               <>
                 <CanvasControls>

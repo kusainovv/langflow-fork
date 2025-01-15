@@ -362,8 +362,9 @@ function GenericNode({
         className={cn(
           borderColor,
           showNode ? "w-80" : `w-48`,
-          "generic-node-div group/node relative rounded-xl shadow-sm hover:shadow-md",
+          "generic-node-div group/node relative hover:shadow-md",
           !hasOutputs && "pb-4",
+          "bg-light-gray"
         )}
       >
         {memoizedNodeToolbarComponent}
@@ -393,7 +394,7 @@ function GenericNode({
         <div
           data-testid={`${data.id}-main-node`}
           className={cn(
-            "grid gap-3 truncate text-wrap p-4 leading-5",
+            "grid gap-3 truncate text-wrap p-4 leading-5 bg-navy",
             showNode && "border-b",
           )}
         >
@@ -410,7 +411,7 @@ function GenericNode({
               data-testid="generic-node-title-arrangement"
             >
               {renderNodeIcon()}
-              <div className="generic-node-tooltip-div">{renderNodeName()}</div>
+              <div className="generic-node-tooltip-div ">{renderNodeName()}</div>
             </div>
             <div data-testid={`${showNode ? "show" : "hide"}-node-content`}>
               {!showNode && (
@@ -426,6 +427,7 @@ function GenericNode({
           </div>
           {showNode && <div>{renderDescription()}</div>}
         </div>
+
         {showNode && (
           <div className="relative">
             <>

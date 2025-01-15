@@ -22,6 +22,7 @@ import IconComponent from "../../../../components/common/genericIconComponent";
 import BuildStatusDisplay from "./components/build-status-display";
 import { normalizeTimeString } from "./utils/format-run-time";
 
+// start button
 export default function NodeStatus({
   nodeId,
   display_name,

@@ -88,6 +88,7 @@ const config = {
         "info-foreground": "var(--info-foreground)",
         "light-blue": "var(--light-blue)",
         "light-gray": "var(--light-gray)",
+        "navy": "var(--navy)",
         "light-slate": "var(--light-slate)",
         "medium-blue": "var(--medium-blue)",
         "status-blue": "var(--status-blue)",
@@ -133,7 +134,7 @@ const config = {
           "hsl(var(--code-description-background))",
         "code-foreground": "hsl(var(--code-foreground))",
         canvas: {
-          DEFAULT: "hsl(var(--canvas))",
+          DEFAULT: "var(--canvas)",
           dot: "hsl(var(--canvas-dot))",
         },
         ice: "var(--ice)",
@@ -339,7 +340,7 @@ const config = {
         },
         ".password": {
           "-webkit-text-security": "disc",
-          "font-family": "text-security-disc",
+          "font-family": "w95fa",
         },
         ".stop": {
           "-webkit-animation-play-state": "paused",

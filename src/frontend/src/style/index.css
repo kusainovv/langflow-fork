@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --font-sans: "Inter", sans-serif;
+    --font-sans: "w95fa", sans-serif;
     --font-mono: "JetBrains Mono", monospace;
     --font-chivo: "Chivo", sans-serif;
 
@@ -32,7 +32,7 @@
     --primary-hover: 240 4% 16%; /* hsl(240, 4%, 16%) */
     --secondary-hover: 240 6% 90%; /* hsl(240, 6%, 90%) */
     --placeholder-foreground: 240 5% 65%; /* hsl(240, 5%, 65%) */
-    --canvas: 240 5% 96%; /* hsl(240, 5%, 96%) */
+    --canvas: #00807F;
     --canvas-dot: 240 5% 65%; /* hsl(240, 5%, 65%) */
     --accent-emerald: 149 80% 90%; /* hsl(149, 80%, 90%) */
     --accent-emerald-foreground: 161 41% 30%; /* hsl(161, 41%, 30%) */
@@ -192,7 +192,7 @@
     --primary-hover: 240 6% 90%; /* hsl(240, 6%, 90%) */
     --secondary-hover: 240 4% 16%; /* hsl(240, 4%, 16%) */
     --placeholder-foreground: 240 4% 46%; /* hsl(240, 4%, 46%) */
-    --canvas: 0 0% 0%; /* hsl(0, 0%, 0%) */
+    --canvas: #00807F;
     --canvas-dot: 240 5.3% 26.1%; /* hsl(240, 5.3%, 26.1%) */
     --accent-emerald: 164 86% 16%; /* hsl(164, 86%, 16%) */
     --accent-emerald-foreground: 158 64% 52%; /* hsl(158, 64%, 52%) */

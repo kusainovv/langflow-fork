@@ -68,14 +68,14 @@ export default function TemplatesModal({
               setCurrentTab={setCurrentTab}
             />
             <main className="flex flex-1 flex-col gap-4 overflow-hidden p-6 md:gap-8">
-              {currentTab === "get-started" ? (
+              {/* {currentTab === "get-started" ? (
                 <GetStartedComponent />
               ) : (
                 <TemplateContentComponent
                   currentTab={currentTab}
                   categories={categories.flatMap((category) => category.items)}
                 />
-              )}
+              )} */}
               <BaseModal.Footer>
                 <div className="flex w-full flex-col justify-between gap-4 pb-4 sm:flex-row sm:items-center">
                   <div className="flex flex-col items-start justify-center">
