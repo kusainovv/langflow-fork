@@ -130,11 +130,11 @@ export default function ChatMessage({
     const element = document.getElementById("last-chat-message");
     if (element && isTabHidden) {
       if (playgroundScrollBehaves === "instant") {
-        element.scrollIntoView({ behavior: playgroundScrollBehaves });
-        setPlaygroundScrollBehaves("smooth");
+        // element.scrollIntoView({ behavior: playgroundScrollBehaves });
+        // setPlaygroundScrollBehaves("smooth");
       } else {
         setTimeout(() => {
-          element.scrollIntoView({ behavior: playgroundScrollBehaves });
+          // element.scrollIntoView({ behavior: playgroundScrollBehaves });
         }, 200);
       }
     }
@@ -216,7 +216,7 @@ export default function ChatMessage({
   };
 
   const editedFlag = chat.edit ? (
-    <div className="text-sm text-muted-foreground">(Edited)</div>
+    <div className="text-xs text-muted-foreground">(Edited)</div>
   ) : null;
 
   if (chat.category === "error") {
@@ -239,16 +239,16 @@ export default function ChatMessage({
       <div className="w-5/6 max-w-[768px] py-4 word-break-break-word">
         <div
           className={cn(
-            "group relative flex w-full gap-4 rounded-md p-2",
-            editMessage ? "" : "hover:bg-muted",
+            "group relative flex w-full gap-4 p-2 bg-light-gray",
+            editMessage ? "" : "",
           )}
         >
           <div
             className={cn(
-              "relative flex h-[32px] w-[32px] items-center justify-center overflow-hidden rounded-md text-2xl",
+              "relative flex h-[32px] w-[32px] items-center justify-center overflow-hidden",
               !chat.isSend
-                ? "bg-muted"
-                : "border border-border hover:border-input",
+                ? ""
+                : "",
             )}
             style={
               chat.properties?.background_color
@@ -257,7 +257,7 @@ export default function ChatMessage({
             }
           >
             {!chat.isSend ? (
-              <div className="flex h-[18px] w-[18px] items-center justify-center">
+              <div className="flex w-[22px] items-center justify-center">
                 {chat.properties?.icon ? (
                   chat.properties.icon.match(
                     /[\u2600-\u27BF\uD83C-\uDBFF\uDC00-\uDFFF]/,
@@ -275,7 +275,7 @@ export default function ChatMessage({
                 )}
               </div>
             ) : (
-              <div className="flex h-[18px] w-[18px] items-center justify-center">
+              <div className="flex w-[22px] items-center justify-center">
                 {chat.properties?.icon ? (
                   chat.properties.icon.match(
                     /[\u2600-\u27BF\uD83C-\uDBFF\uDC00-\uDFFF]/,
@@ -296,7 +296,7 @@ export default function ChatMessage({
             <div>
               <div
                 className={cn(
-                  "flex max-w-full items-baseline gap-3 truncate pb-2 text-[14px] font-semibold",
+                  "flex max-w-full items-baseline gap-3 truncate pb-2 text-xs",
                 )}
                 style={
                   chat.properties?.text_color
@@ -309,7 +309,7 @@ export default function ChatMessage({
               >
                 {chat.sender_name}
                 {chat.properties?.source && (
-                  <div className="text-[13px] font-normal text-muted-foreground">
+                  <div className="text-xs font-normal">
                     {chat.properties?.source.source}
                   </div>
                 )}
@@ -406,8 +406,8 @@ export default function ChatMessage({
                   ) : (
                     <>
                       <div
-                        className={`w-full items-baseline whitespace-pre-wrap break-words text-[14px] font-normal ${
-                          isEmpty ? "text-muted-foreground" : "text-primary"
+                        className={`w-full items-baseline whitespace-pre-wrap break-words text-xs ${
+                          isEmpty ? "text-muted-foreground" : "text-black"
                         }`}
                         data-testid={`chat-message-${chat.sender_name}-${chatMessage}`}
                       >

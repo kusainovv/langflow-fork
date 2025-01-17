@@ -44,7 +44,7 @@ export default function NoticeAlert({
     >
       <div
         onClick={handleClick}
-        className="noflow nowheel nopan nodelete nodrag mt-6 w-96 rounded-md bg-info-background p-4 shadow-xl"
+        className="noflow nowheel nopan nodelete nodrag mt-6 w-96   bg-info-background p-4 shadow-xl"
       >
         <div className="flex">
           <div className="flex-shrink-0 cursor-help">

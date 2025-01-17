@@ -152,11 +152,11 @@ const TableComponent = forwardRef<
     };
     if (props.rowData.length === 0 && displayEmptyAlert) {
       return (
-        <div className="flex h-full w-full items-center justify-center rounded-md border">
+        <div className="flex h-full w-full items-center justify-center   border">
           <Alert variant={"default"} className="w-fit">
             <ForwardedIconComponent
               name="AlertCircle"
-              className="h-5 w-5 text-primary"
+              className="h-5 w-5 text-black"
             />
             <AlertTitle>{alertTitle}</AlertTitle>
             <AlertDescription>{alertDescription}</AlertDescription>
@@ -168,11 +168,11 @@ const TableComponent = forwardRef<
     if (colDef.length === 0) {
       {
         return (
-          <div className="flex h-full w-full items-center justify-center rounded-md border">
+          <div className="flex h-full w-full items-center justify-center   border">
             <Alert variant={"default"} className="w-fit">
               <ForwardedIconComponent
                 name="AlertCircle"
-                className="h-5 w-5 text-primary"
+                className="h-5 w-5 text-black"
               />
               <AlertTitle>{NO_COLUMN_DEFINITION_ALERT_TITLE}</AlertTitle>
               <AlertDescription>

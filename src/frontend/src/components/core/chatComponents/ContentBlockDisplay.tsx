@@ -58,7 +58,7 @@ export function ContentBlockDisplay({
           ease: "easeOut",
         }}
         className={cn(
-          "relative rounded-lg border border-border bg-background",
+          "relative rounded-lg border border-border bg-silver",
           "overflow-hidden",
         )}
       >
@@ -94,7 +94,7 @@ export function ContentBlockDisplay({
                 <Markdown
                   remarkPlugins={[remarkGfm]}
                   rehypePlugins={[rehypeMathjax]}
-                  className="inline-block w-fit max-w-full text-[14px] font-semibold text-primary"
+                  className="inline-block w-fit max-w-full text-[14px] font-semibold text-black"
                 >
                   {headerTitle}
                 </Markdown>

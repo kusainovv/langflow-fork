@@ -22,13 +22,13 @@ export const SearchInput = memo(function SearchInput({
     <div className="relative w-full flex-1">
       <ForwardedIconComponent
         name="Search"
-        className="absolute inset-y-0 left-2 top-1/2 h-4 w-4 -translate-y-1/2 text-primary"
+        className="absolute inset-y-0 left-2 top-1/2 h-4 w-4 -translate-y-1/2 text-black"
       />
       <Input
         ref={searchInputRef}
         type="search"
         data-testid="sidebar-search-input"
-        className="w-full rounded-lg bg-background pl-8 text-sm"
+        className="w-full bg-white text-sm"
         placeholder=""
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}

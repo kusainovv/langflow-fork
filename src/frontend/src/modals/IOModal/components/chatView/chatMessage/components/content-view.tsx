@@ -31,7 +31,7 @@ export const ErrorView = ({
               key="loading"
               initial={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="flex w-full gap-4 rounded-md p-2"
+              className="flex w-full gap-4   p-2"
             >
               <LogoIcon />
               <div className="flex items-center">
@@ -46,13 +46,13 @@ export const ErrorView = ({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
-              className="flex w-full gap-4 rounded-md p-2"
+              className="flex w-full gap-4   p-2"
             >
               <LogoIcon />
               {blocks.map((block, blockIndex) => (
                 <div
                   key={blockIndex}
-                  className="w-full rounded-xl border border-error-red-border bg-error-red p-4 text-[14px] text-foreground"
+                  className="w-full   border border-error-red-border bg-error-red p-4 text-[14px] text-foreground"
                 >
                   {block.contents.map((content, contentIndex) => {
                     if (content.type === "error") {

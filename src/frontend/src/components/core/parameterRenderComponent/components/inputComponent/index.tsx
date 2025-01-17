@@ -175,7 +175,7 @@ export default function InputComponent({
             }}
             className={cn(
               onChange && setSelectedOption && selectedOption !== ""
-                ? "text-accent-emerald-foreground"
+                ? "text-white"
                 : "text-placeholder-foreground",
               !disabled && "hover:text-foreground",
             )}

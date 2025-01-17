@@ -208,7 +208,7 @@ export default function CodeAreaModal({
         <span className="pr-2"> {EDIT_CODE_TITLE} </span>
         <IconComponent
           name="prompts"
-          className="h-6 w-6 pl-1 text-primary"
+          className="h-6 w-6 pl-1 text-black"
           aria-hidden="true"
         />
       </BaseModal.Header>
@@ -238,7 +238,7 @@ export default function CodeAreaModal({
               onChange={(value) => {
                 setCode(value);
               }}
-              className="h-full min-w-full rounded-lg border-[1px] border-gray-300 custom-scroll dark:border-gray-600"
+              className="h-full min-w-full   border-[1px] border-gray-300 custom-scroll dark:border-gray-600"
             />
           </div>
           <div

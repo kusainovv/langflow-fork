@@ -84,7 +84,7 @@ export default function ImageViewer({ image }: { image: string }) {
   }
 
   return image === "" ? (
-    <div className="align-center flex h-full w-full flex-col justify-center gap-5 rounded-md border border-border bg-muted">
+    <div className="align-center flex h-full w-full flex-col justify-center gap-5   border border-border bg-muted">
       <div className="align-center flex justify-center gap-2">
         <ForwardedIconComponent name="Image" />
         {IMGViewErrorTitle}
@@ -98,14 +98,14 @@ export default function ImageViewer({ image }: { image: string }) {
   ) : (
     <>
       <div className="align-center my-2 mb-4 flex w-full justify-center">
-        <div className="shadow-round-btn-shadow hover:shadow-round-btn-shadow flex w-[50%] items-center justify-center rounded-sm border bg-muted shadow-md transition-all">
+        <div className="shadow-round-btn-shadow hover:shadow-round-btn-shadow flex w-[50%] items-center justify-center   border bg-muted shadow-md transition-all">
           <button
             id="zoom-in-button"
             className="relative inline-flex w-full items-center justify-center px-3 py-3 text-sm font-semibold transition-all duration-500 ease-in-out hover:bg-hover"
           >
             <ForwardedIconComponent
               name="ZoomIn"
-              className={"h-5 w-5 text-secondary-foreground"}
+              className={"h-5 w-5 text-black"}
             />
           </button>
           <div>
@@ -117,7 +117,7 @@ export default function ImageViewer({ image }: { image: string }) {
           >
             <ForwardedIconComponent
               name="ZoomOut"
-              className={"h-5 w-5 text-secondary-foreground"}
+              className={"h-5 w-5 text-black"}
             />
           </button>
           <div>
@@ -129,7 +129,7 @@ export default function ImageViewer({ image }: { image: string }) {
           >
             <ForwardedIconComponent
               name="RotateCcw"
-              className={"h-5 w-5 text-secondary-foreground"}
+              className={"h-5 w-5 text-black"}
             />
           </button>
           <div>
@@ -141,7 +141,7 @@ export default function ImageViewer({ image }: { image: string }) {
           >
             <ForwardedIconComponent
               name="Maximize2"
-              className={"h-5 w-5 text-secondary-foreground"}
+              className={"h-5 w-5 text-black"}
             />
           </button>
           <div>
@@ -154,7 +154,7 @@ export default function ImageViewer({ image }: { image: string }) {
           >
             <ForwardedIconComponent
               name="ArrowDownToLine"
-              className={"h-5 w-5 text-secondary-foreground"}
+              className={"h-5 w-5 text-black"}
             />
           </button>
         </div>

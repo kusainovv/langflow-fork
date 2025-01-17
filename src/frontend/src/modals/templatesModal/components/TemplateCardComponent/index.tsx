@@ -26,14 +26,14 @@ export default function TemplateCardComponent({
   return (
     <div
       data-testid={`template-${convertTestName(example.name)}`}
-      className="group flex cursor-pointer gap-3 overflow-hidden rounded-md p-3 hover:bg-muted focus-visible:bg-muted"
+      className="group flex cursor-pointer gap-3 overflow-hidden   p-3 hover:bg-muted focus-visible:bg-muted"
       tabIndex={0}
       onKeyDown={handleKeyDown}
       onClick={onClick}
     >
       <div
         className={cn(
-          "relative h-20 w-20 shrink-0 overflow-hidden rounded-md p-4 outline-none ring-ring",
+          "relative h-20 w-20 shrink-0 overflow-hidden   p-4 outline-none ring-ring",
           swatchColors[swatchIndex],
         )}
       >

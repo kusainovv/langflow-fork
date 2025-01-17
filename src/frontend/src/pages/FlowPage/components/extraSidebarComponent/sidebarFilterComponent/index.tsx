@@ -17,7 +17,7 @@ export function SidebarFilterComponent({
   const plural = tooltips.length > 1 ? "s" : "";
   return (
     <div
-      className={`mb-0.5 flex w-full items-center justify-between rounded border p-2 text-sm text-foreground`}
+      className={`mb-0.5 flex w-full items-center justify-between border p-2 text-sm text-foreground`}
       style={{
         backgroundColor: `hsl(var(--datatype-${color}-foreground))`,
       }}

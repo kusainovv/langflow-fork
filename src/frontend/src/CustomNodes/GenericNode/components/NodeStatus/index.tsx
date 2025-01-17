@@ -179,7 +179,7 @@ export default function NodeStatus({
     if (BuildStatus.BUILDING === buildStatus && isHovered) {
       return "Stop build";
     }
-    return "Run component";
+    return "Run component 2";
   };
 
   return showNode ? (
@@ -188,9 +188,9 @@ export default function NodeStatus({
         <div className="flex items-center gap-2 self-center">
           <ShadTooltip
             styleClasses={cn(
-              "border rounded-xl",
+              "border  ",
               conditionSuccess
-                ? "border-accent-emerald-foreground bg-success-background"
+                ? "border-red-500 bg-success-background"
                 : "border-destructive bg-error-background",
             )}
             content={
@@ -205,7 +205,7 @@ export default function NodeStatus({
           >
             <div className="cursor-help">
               {conditionSuccess && validationStatus?.data?.duration ? (
-                <div className="font-w95fa mr-1 flex gap-1 rounded-sm bg-accent-emerald px-1 text-[11px] font-bold text-accent-emerald-foreground">
+                <div className="font-w95fa mr-1 flex gap-1   bg-accent-emerald px-1 text-[11px] font-bold text-white">
                   <Check className="h-4 w-4 items-center self-center" />
                   <span>
                     {normalizeTimeString(validationStatus?.data?.duration)}
@@ -222,7 +222,7 @@ export default function NodeStatus({
           {data.node?.beta && showNode && (
             <Badge
               size="sq"
-              className="pointer-events-none mr-1 flex h-[22px] w-10 justify-center rounded-[8px] bg-accent-pink text-accent-pink-foreground"
+              className="pointer-events-none mr-1 flex h-[22px] w-10 justify-center bg-accent-pink text-accent-pink-foreground"
             >
               <span className="text-[11px]">Beta</span>
             </Badge>

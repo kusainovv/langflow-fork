@@ -35,10 +35,10 @@ export const ButtonInputList = ({
         className={cn(
           "hit-area-icon group flex items-center justify-center text-center",
           disabled
-            ? "pointer-events-none bg-background hover:bg-background"
+            ? "pointer-events-none bg-silver hover:bg-silver"
             : "",
           (index === 0 && value.length <= 1) || addIcon
-            ? "bg-background hover:bg-muted"
+            ? "bg-silver hover:bg-muted"
             : "hover:bg-smooth-red",
         )}
       >

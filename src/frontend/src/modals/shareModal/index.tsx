@@ -223,7 +223,7 @@ export default function ShareModal({
         <BaseModal.Content>
           {open && (
             <>
-              <div className="w-full rounded-lg border border-border p-4">
+              <div className="w-full border border-border p-4">
                 <EditFlowSettings name={name} description={description} />
               </div>
               <div className="mt-3 flex h-8 w-full">

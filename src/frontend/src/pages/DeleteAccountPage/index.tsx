@@ -27,10 +27,10 @@ export default function DeleteAccountPage() {
         ) : (
           <span className="mb-4 text-5xl">⛓️</span>
         )}
-        <span className="mb-4 text-center text-2xl font-semibold text-primary">
+        <span className="mb-4 text-center text-2xl font-semibold text-black">
           Delete your account
         </span>
-        <Input className="bg-background" placeholder="Confirm password" />
+        <Input className="bg-silver" placeholder="Confirm password" />
 
         <BaseModal
           open={showConfirmation}

@@ -59,12 +59,12 @@ export default function LoginAdminPage() {
         ) : (
           <span className="mb-4 text-5xl">⛓️</span>
         )}
-        <span className="mb-6 text-2xl font-semibold text-primary">Admin</span>
+        <span className="mb-6 text-2xl font-semibold text-black">Admin</span>
         <Input
           onChange={({ target: { value } }) => {
             handleInput({ target: { name: "username", value } });
           }}
-          className="bg-background"
+          className="bg-silver"
           placeholder="Username"
         />
         <Input
@@ -72,7 +72,7 @@ export default function LoginAdminPage() {
           onChange={({ target: { value } }) => {
             handleInput({ target: { name: "password", value } });
           }}
-          className="bg-background"
+          className="bg-silver"
           placeholder="Password"
         />
         <Button

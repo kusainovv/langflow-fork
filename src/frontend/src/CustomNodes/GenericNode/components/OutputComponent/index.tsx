@@ -28,7 +28,7 @@ export default function OutputComponent({
     <span
       className={cn(
         "text-[13px] font-medium",
-        isToolMode && "text-secondary",
+        isToolMode && "text-black",
         frozen ? "text-ice" : "",
       )}
     >

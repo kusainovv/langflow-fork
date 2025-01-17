@@ -5,15 +5,15 @@ import IOModal from "@/modals/IOModal/new-modal";
 
 const PlaygroundButton = ({ hasIO, open, setOpen, canvasOpen }) => {
   const PlayIcon = () => (
-    <ForwardedIconComponent name="Play" className="h-4 w-4 transition-all" />
+    <ForwardedIconComponent name="Play" className="h-4 w-4 transition-all text-black" />
   );
 
-  const ButtonLabel = () => <span className="hidden md:block">Playground</span>;
+  const ButtonLabel = () => <span className="hidden md:block text-black">Playground</span>;
 
   const ActiveButton = () => (
     <Button
       data-testid="playground-btn-flow-io"
-      className="playground-btn-flow-toolbar text-black hover:bg-accent"
+      className="playground-btn-flow-toolbar"
     >
       <PlayIcon />
       <ButtonLabel />

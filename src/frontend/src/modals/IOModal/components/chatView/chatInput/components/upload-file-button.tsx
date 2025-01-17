@@ -14,7 +14,7 @@ const UploadFileButton = ({
       side="right"
       content="Attach image (png, jpg, jpeg)"
     >
-      <div>
+      <Button disabled={lockChat}>
         <input
           disabled={lockChat}
           type="file"
@@ -22,19 +22,18 @@ const UploadFileButton = ({
           style={{ display: "none" }}
           onChange={handleFileChange}
         />
-        <Button
-          disabled={lockChat}
-          className={`flex h-[32px] w-[32px] items-center justify-center rounded-md bg-muted font-bold transition-all ${
+        <div
+          className={`flex h-[32px] w-[32px] items-center justify-center font-bold transition-all ${
             lockChat
               ? "cursor-not-allowed"
-              : "text-muted-foreground hover:text-primary"
+              : "text-muted-foreground hover:text-black"
           }`}
           onClick={handleButtonClick}
-          unstyled
+          
         >
           <ForwardedIconComponent className="h-[18px] w-[18px]" name="Image" />
-        </Button>
-      </div>
+        </div>
+      </Button>
     </ShadTooltip>
   );
 };

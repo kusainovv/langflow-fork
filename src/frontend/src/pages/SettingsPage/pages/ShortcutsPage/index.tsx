@@ -63,7 +63,7 @@ export default function ShortcutsPage() {
             Shortcuts
             <ForwardedIconComponent
               name="Keyboard"
-              className="ml-2 h-5 w-5 text-primary"
+              className="ml-2 h-5 w-5 text-black"
             />
           </h2>
           <p className="text-sm text-muted-foreground">

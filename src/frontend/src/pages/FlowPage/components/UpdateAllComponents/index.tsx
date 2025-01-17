@@ -104,7 +104,7 @@ export default function UpdateAllComponents() {
   return (
     <div
       className={cn(
-        "absolute bottom-2 left-1/2 z-50 flex w-[500px] -translate-x-1/2 items-center gap-8 rounded-lg bg-warning px-4 py-2 text-sm font-medium text-warning-foreground shadow-md transition-all ease-in",
+        "absolute bottom-2 left-1/2 z-50 flex w-[500px] -translate-x-1/2 items-center gap-8 bg-warning px-4 py-2 text-sm font-medium text-warning-foreground shadow-md transition-all ease-in",
         dismissed && "translate-y-[120%]",
       )}
     >

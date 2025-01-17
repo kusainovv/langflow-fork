@@ -96,7 +96,7 @@ export const SidebarDraggableComponent = forwardRef(
           <div
             draggable={!error}
             className={
-              "side-bar-components-border bg-background" +
+              "side-bar-components-border bg-silver" +
               (error ? " cursor-not-allowed select-none" : "")
             }
             style={{

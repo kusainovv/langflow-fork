@@ -146,7 +146,7 @@ export default function MultiselectComponent({
           setSearchValue(event.target.value);
         }}
         placeholder="Search options..."
-        className="flex h-9 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
+        className="flex h-9 w-full   bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
       />
       <Button
         unstyled
@@ -181,7 +181,7 @@ export default function MultiselectComponent({
                 <ForwardedIconComponent
                   name="Check"
                   className={cn(
-                    "ml-auto h-4 w-4 shrink-0 text-primary",
+                    "ml-auto h-4 w-4 shrink-0 text-black",
                     treatedValue.includes(option) ? "opacity-100" : "opacity-0",
                   )}
                 />

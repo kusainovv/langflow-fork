@@ -44,7 +44,7 @@ const Content: React.FC<ContentProps> = ({
   return (
     <div
       className={cn(
-        `flex w-full flex-grow flex-col transition-all duration-300`,
+        `flex w-full flex-grow flex-col transition-all duration-300`, // flex w-full flex-grow flex-col transition-all duration-300
         overflowHidden ? "overflow-hidden" : "overflow-visible",
         className,
       )}

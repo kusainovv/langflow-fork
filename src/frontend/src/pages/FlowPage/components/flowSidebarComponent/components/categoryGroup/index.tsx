@@ -7,6 +7,7 @@ import { memo } from "react";
 import { CategoryGroupProps } from "../../types";
 import { CategoryDisclosure } from "../categoryDisclouse";
 
+// components sidebar
 export const CategoryGroup = memo(function CategoryGroup({
   dataFilter,
   sortedCategories,
@@ -19,9 +20,8 @@ export const CategoryGroup = memo(function CategoryGroup({
   onDragStart,
   sensitiveSort,
 }: CategoryGroupProps) {
-  // Comment here
   return (
-    <SidebarGroup className="p-3">
+    <SidebarGroup className="p-4">
       <SidebarGroupContent>
         <SidebarMenu>
           

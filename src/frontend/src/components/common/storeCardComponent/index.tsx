@@ -177,7 +177,7 @@ export default function StoreCardComponent({
             </div>
             <div className="flex gap-2">
               {data.user_created && data.user_created.username && (
-                <span className="text-sm text-primary">
+                <span className="text-sm text-black">
                   by <b>{data.user_created.username}</b>
                   {data.last_tested_version && (
                     <>

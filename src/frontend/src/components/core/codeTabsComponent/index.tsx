@@ -45,7 +45,7 @@ export default function CodeTabsComponent({
       className={
         "api-modal-tabs inset-0 m-0 " +
         (isMessage ? "dark" : "") +
-        (dark && isMessage ? "bg-background" : "")
+        (dark && isMessage ? "bg-silver" : "")
       }
       onValueChange={(value) => {
         setActiveTab(value);
@@ -57,7 +57,7 @@ export default function CodeTabsComponent({
             {tabs.map((tab, index) => (
               <TabsTrigger
                 className={
-                  isMessage ? "data-[state=active]:bg-primary-foreground" : ""
+                  isMessage ? "" : "" // data-[state=active]:bg-silver-foreground
                 }
                 key={index}
                 value={index.toString()}
@@ -85,7 +85,7 @@ export default function CodeTabsComponent({
                   dangerouslySetInnerHTML={{ __html: tab.description }}
                 ></div>
               )}
-              <div className="flex w-full items-center justify-end gap-4 rounded-t-md border border-border bg-muted px-4 py-2">
+              <div className="flex w-full items-center justify-end gap-4 border border-border bg-muted px-4 py-2">
                 {nodes.length > 0 &&
                   tabs.find((tab) => tab.name.toLowerCase() === "tweaks") &&
                   tabs[activeTab].hasTweaks && (
@@ -143,7 +143,7 @@ export default function CodeTabsComponent({
               <SyntaxHighlighter
                 language={tab.language}
                 style={oneDark}
-                className="!my-0 h-full overflow-auto rounded-sm !rounded-t-none border border-t-0 border-border text-left custom-scroll"
+                className="!my-0 h-full overflow-auto border border-t-0 border-border text-left custom-scroll"
               >
                 {tab.code}
               </SyntaxHighlighter>

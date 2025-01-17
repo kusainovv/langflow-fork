@@ -75,7 +75,7 @@ export default function LoginPage(): JSX.Element {
           ) : (
             <span className="mb-4 text-5xl">⛓️</span>
           )}
-          <span className="mb-6 text-2xl font-semibold text-primary">
+          <span className="mb-6 text-2xl font-semibold text-black">
             Sign in to Langflow
           </span>
           <div className="mb-3 w-full">

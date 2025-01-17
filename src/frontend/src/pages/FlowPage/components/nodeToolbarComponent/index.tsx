@@ -516,7 +516,7 @@ const NodeToolbarComponent = memo(
               <Button
                 className={cn(
                   "node-toolbar-buttons h-[2rem]",
-                  toolMode && "text-primary",
+                  toolMode && "text-black",
                 )}
                 variant="ghost"
                 onClick={(event) => {
@@ -531,7 +531,7 @@ const NodeToolbarComponent = memo(
                   name="Hammer"
                   className={cn(
                     "h-4 w-4 transition-all",
-                    toolMode ? "text-primary" : "",
+                    toolMode ? "text-black" : "",
                   )}
                 />
                 <span className="text-[13px] font-medium">Tool Mode</span>
@@ -596,7 +596,7 @@ const NodeToolbarComponent = memo(
                 </ShadTooltip>
               </SelectTrigger>
               <SelectContentWithoutPortal
-                className={"relative top-1 w-56 bg-background"}
+                className={"relative top-1 w-56 bg-silver"}
               >
                 {hasCode && (
                   <SelectItem value={"code"}>
@@ -770,7 +770,7 @@ const NodeToolbarComponent = memo(
                     />{" "}
                     <span className="">Delete</span>{" "}
                     <span
-                      className={`absolute right-2 top-2 flex items-center justify-center rounded-sm px-1 py-[0.2]`}
+                      className={`absolute right-2 top-2 flex items-center justify-center px-1 py-[0.2]`}
                     >
                       <IconComponent
                         name="Delete"
@@ -789,7 +789,7 @@ const NodeToolbarComponent = memo(
                       value={"Tool Mode"}
                       icon={"Hammer"}
                       dataTestId="tool-mode-button"
-                      style={`${toolMode ? "text-primary" : ""} transition-all`}
+                      style={`${toolMode ? "text-black" : ""} transition-all`}
                     />
                   </SelectItem>
                 )}

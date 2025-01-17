@@ -70,7 +70,7 @@ function NoteNode({
         }}
         ref={nodeDiv}
         className={cn(
-          "relative flex h-full w-full flex-col gap-3 rounded-xl p-3 transition-all",
+          "relative flex h-full w-full flex-col gap-3   p-3 transition-all",
           COLOR_OPTIONS[bgColor] !== null &&
             `border ${!selected && "-z-50 shadow-sm"}`,
         )}
@@ -85,15 +85,15 @@ function NoteNode({
         >
           <NodeDescription
             inputClassName={cn(
-              "border-0 ring-0 focus:ring-0 resize-none shadow-none rounded-sm h-full w-full",
+              "border-0 ring-0 focus:ring-0 resize-none shadow-none   h-full w-full",
               COLOR_OPTIONS[bgColor] === null
                 ? ""
-                : "dark:!ring-background dark:text-background",
+                : "dark:!ring-background dark:text-black",
             )}
             mdClassName={cn(
               COLOR_OPTIONS[bgColor] === null
                 ? "dark:prose-invert"
-                : "dark:!text-background",
+                : "dark:!text-black",
             )}
             style={{ backgroundColor: COLOR_OPTIONS[bgColor] ?? "#00000000" }}
             charLimit={2500}
@@ -102,7 +102,7 @@ function NoteNode({
             description={data.node?.description}
             emptyPlaceholder="Double-click to start typing or enter Markdown..."
             placeholderClassName={
-              COLOR_OPTIONS[bgColor] === null ? "" : "dark:!text-background"
+              COLOR_OPTIONS[bgColor] === null ? "" : "dark:!text-black"
             }
           />
         </div>

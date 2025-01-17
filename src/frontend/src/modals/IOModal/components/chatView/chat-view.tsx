@@ -27,6 +27,7 @@ const MemoizedChatMessage = memo(ChatMessage, (prevProps, nextProps) => {
   );
 });
 
+// the chat view component
 export default function ChatView({
   sendMessage,
   lockChat,
@@ -94,6 +95,7 @@ export default function ChatView({
           properties: message.properties || {},
         };
       });
+      // TODO: Ratmir / We get an "User" icon from backend although the responses from AI assistant must be about "AI" not "User"
     const finalChatHistory = [...messagesFromMessagesStore].sort((a, b) => {
       return new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime();
     });
@@ -108,20 +110,20 @@ export default function ChatView({
 
     setChatHistory(finalChatHistory);
   }, [flowPool, messages, visibleSession]);
-  useEffect(() => {
-    if (messagesRef.current) {
-      messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (messagesRef.current) {
+  //     // messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
+  //   }
+  // }, []);
 
   const ref = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    if (ref.current) {
-      ref.current.focus();
-    }
-    // trigger focus on chat when new session is set
-  }, [focusChat]);
+  // useEffect(() => {
+  //   if (ref.current) {
+  //     // ref.current.focus();
+  //   }
+  //   // trigger focus on chat when new session is set
+  // }, [focusChat]);
 
   function updateChat(
     chat: ChatMessageType,
@@ -152,10 +154,10 @@ export default function ChatView({
   };
 
   const flowRunningSkeletonMemo = useMemo(() => <FlowRunningSqueleton />, []);
-
+  
   return (
     <div
-      className="flex h-full w-full flex-col rounded-md"
+      className="flex h-full w-full flex-col  "
       onDragOver={dragOver}
       onDragEnter={dragEnter}
       onDragLeave={dragLeave}
@@ -192,7 +194,7 @@ export default function ChatView({
                   />
                 )}
                 <div className="flex flex-col items-center justify-center">
-                  <h3 className="mt-2 pb-2 text-2xl font-semibold text-primary">
+                  <h3 className="mt-2 pb-2 text-2xl font-semibold text-black">
                     New chat
                   </h3>
                   <p

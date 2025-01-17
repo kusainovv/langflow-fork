@@ -55,7 +55,7 @@ export default function ContentDisplay({
             remarkPlugins={[remarkGfm]}
             linkTarget="_blank"
             rehypePlugins={[rehypeMathjax]}
-            className="markdown prose max-w-full text-[14px] font-normal dark:prose-invert"
+            className="markdown prose max-w-full text-[14px] text-red-400 font-normal dark:prose-invert"
             components={{
               p({ node, ...props }) {
                 return (

@@ -15,8 +15,8 @@ export const HeaderMenu = ({ children }) => (
 );
 
 export const HeaderMenuToggle = ({ children }) => (
-  <DropdownMenuTrigger className="group inline-flex w-full items-center justify-center gap-1 rounded-md pr-0">
-    <div className="flex items-center gap-1 rounded-lg px-2 py-1.5 group-hover:bg-muted">
+  <DropdownMenuTrigger className="group inline-flex w-full items-center justify-center gap-1   pr-0">
+    <div className="flex items-center gap-1   px-2 py-1.5 group-hover:bg-muted">
       {children}
       <ChevronsUpDown
         className="text-muted-foreground group-hover:text-foreground"
@@ -33,7 +33,7 @@ export const HeaderMenuItemLink = ({
   newPage = false,
   icon = "external-link",
 }) => (
-  <DropdownMenuItem className="cursor-pointer rounded-none p-3 px-4" asChild>
+  <DropdownMenuItem className="cursor-pointer   p-3 px-4" asChild>
     <a
       href={href}
       className="group flex w-full items-center justify-between"
@@ -88,7 +88,7 @@ export const HeaderMenuItemsTitle = ({
   subTitle,
   children,
 }: React.PropsWithChildren<{ subTitle?: React.ReactNode }>) => (
-  <header className="group flex w-full flex-col items-start rounded-md rounded-b-none border px-4 py-3">
+  <header className="group flex w-full flex-col items-start border px-4 py-3">
     <h3 className="text-base font-semibold">{children}</h3>
     {subTitle ? <h4 className="text-sm font-normal">{subTitle}</h4> : null}
   </header>

@@ -44,7 +44,7 @@ export default function HandleTooltipComponent({
           )}
           {tooltips.map((word, index) => (
             <Badge
-              className="h-6 rounded-md p-1"
+              className="h-6   p-1"
               key={`${index}-${word.toLowerCase()}`}
               style={{
                 backgroundColor: left

@@ -31,7 +31,7 @@ export function EditMessageButton({
   };
 
   return (
-    <div className="flex items-center rounded-md border border-border bg-background">
+    <div className="flex items-center   border border-border bg-silver">
       <ShadTooltip styleClasses="z-50" content="Edit message" side="top">
         <div className="p-1">
           <Button

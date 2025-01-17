@@ -77,9 +77,9 @@ const ListComponent = ({ flowData }: { flowData: FlowType }) => {
         draggable
         onDragStart={onDragStart}
         onClick={handleClick}
-        className={`my-2 flex flex-row bg-background ${
+        className={`my-2 flex flex-row bg-silver ${
           isComponent ? "cursor-default" : "cursor-pointer"
-        } group justify-between rounded-lg border border-border p-4 hover:border-placeholder-foreground hover:shadow-sm`}
+        } group justify-between border border-border p-4 hover:border-placeholder-foreground hover:shadow-sm`}
         data-testid="list-card"
       >
         {/* left side */}
@@ -91,7 +91,7 @@ const ListComponent = ({ flowData }: { flowData: FlowType }) => {
           {/* Icon */}
           <div
             className={cn(
-              `item-center flex justify-center rounded-lg p-3`,
+              `item-center flex justify-center p-3`,
               swatchColors[swatchIndex],
             )}
           >
@@ -111,7 +111,7 @@ const ListComponent = ({ flowData }: { flowData: FlowType }) => {
                 Edited {timeElapsed(flowData.updated_at)} ago
               </div>
             </div>
-            <div className="overflow-hidden text-sm text-primary">
+            <div className="overflow-hidden text-sm text-black">
               <span className="block max-w-[110ch] truncate">
                 {flowData.description}
               </span>

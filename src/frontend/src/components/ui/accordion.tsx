@@ -46,7 +46,7 @@ const AccordionTrigger = React.forwardRef<
           <ChevronDownIcon
             className={cn(
               "h-4 w-4 font-bold transition-transform duration-200",
-              disabled ? "text-muted-foreground" : "text-primary",
+              disabled ? "text-muted-foreground" : "text-black",
             )}
           />
         </ShadTooltip>

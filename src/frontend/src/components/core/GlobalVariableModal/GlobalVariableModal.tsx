@@ -130,7 +130,7 @@ export default function GlobalVariableModal({
       <BaseModal.Header description="This variable will be available for use across your flows.">
         <ForwardedIconComponent
           name="Globe"
-          className="h-6 w-6 pr-1 text-primary"
+          className="h-6 w-6 pr-1 text-black"
           aria-hidden="true"
         />
         {initialData ? "Update Variable" : "Create Variable"}

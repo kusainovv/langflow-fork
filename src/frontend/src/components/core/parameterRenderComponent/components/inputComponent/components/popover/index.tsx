@@ -94,7 +94,7 @@ const SelectionIndicator = ({ isSelected }: { isSelected: boolean }) => (
     <div className="absolute opacity-100 transition-all group-hover:opacity-0">
       <ForwardedIconComponent
         name="Check"
-        className="mr-2 h-4 w-4 text-primary"
+        className="mr-2 h-4 w-4 text-black"
         aria-hidden="true"
       />
     </div>

@@ -109,11 +109,6 @@ body {
   color: #fff;
 }
 
-/* GitHub */
-.header-github-link:hover {
-  opacity: 0.6;
-}
-
 .header-github-link:before {
   content: "";
   width: 24px;

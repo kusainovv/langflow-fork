@@ -3,6 +3,7 @@ import { Cross2Icon } from "@radix-ui/react-icons";
 import * as React from "react";
 import { cn } from "../../utils/utils";
 import ShadTooltip from "../common/shadTooltipComponent";
+import { Button } from "./button";
 
 const Dialog = DialogPrimitive.Root;
 
@@ -38,32 +39,46 @@ DialogOverlay.displayName = DialogPrimitive.Overlay.displayName;
 const DialogContent = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>
->(({ className, children, ...props }, ref) => (
-  <DialogPortal>
+>(({ className, children, ...props }, ref) => {
+  console.info(props)
+  return <DialogPortal>
     <DialogOverlay />
+
+
     <DialogPrimitive.Content
       ref={ref}
       className={cn(
-        "fixed z-50 flex w-full max-w-lg flex-col gap-4 rounded-xl border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%]",
+        "fixed z-50 flex w-full max-w-lg flex-col bg-silver duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%]",
         className,
       )}
       {...props}
     >
-      {children}
+          
+      <DialogPrimitive.Close>
+        <div className="relative bg-navy w-full min-h-[18px] h-100% flex justify-between items-center">
+              <p className="m-0 text-white text-xs	pl-2">Modal_Window.exe</p>
+
+              <div className="h-full w-[30px]">
+                <Button className="w-full h-full">
+                  <Cross2Icon className="text-black" />
+                </Button>
+              <span className="sr-only">Close</span>
+            </div>
+          </div>
+        </DialogPrimitive.Close>
+        
+     {children}
+
       <ShadTooltip
         styleClasses="z-50"
         content="Close"
         side="bottom"
         avoidCollisions
       >
-        <DialogPrimitive.Close className="absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-sm ring-offset-background transition-opacity hover:bg-secondary-hover hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-          <Cross2Icon className="h-[18px] w-[18px]" />
-          <span className="sr-only">Close</span>
-        </DialogPrimitive.Close>
       </ShadTooltip>
     </DialogPrimitive.Content>
   </DialogPortal>
-));
+});
 DialogContent.displayName = DialogPrimitive.Content.displayName;
 
 const DialogHeader = ({
@@ -71,7 +86,7 @@ const DialogHeader = ({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => (
   <div
-    className={cn("flex flex-col space-y-1 text-left", className)}
+    className={cn("flex flex-col space-y-1 p-4 text-left", className)}
     {...props}
   />
 );

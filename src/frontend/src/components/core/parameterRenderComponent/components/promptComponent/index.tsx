@@ -7,7 +7,7 @@ import { getPlaceholder } from "../../helpers/get-placeholder-disabled";
 import { InputProps, PromptAreaComponentType } from "../../types";
 
 const promptContentClasses = {
-  base: "overflow-hidden text-clip whitespace-nowrap bg-background",
+  base: "overflow-hidden text-clip whitespace-nowrap bg-silver",
   editNode: "input-edit-node input-dialog",
   normal: "primary-input text-muted-foreground",
   disabled: "disabled-state",

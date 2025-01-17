@@ -121,7 +121,7 @@ export default function Dropdown({
       <input
         onChange={searchRoleByTerm}
         placeholder="Search options..."
-        className="flex h-9 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
+        className="flex h-9 w-full   bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
         autoComplete="off"
       />
     </div>
@@ -149,7 +149,7 @@ export default function Dropdown({
               <ForwardedIconComponent
                 name="Check"
                 className={cn(
-                  "ml-auto h-4 w-4 shrink-0 text-primary",
+                  "ml-auto h-4 w-4 shrink-0 text-black",
                   value === option ? "opacity-100" : "opacity-0",
                 )}
               />

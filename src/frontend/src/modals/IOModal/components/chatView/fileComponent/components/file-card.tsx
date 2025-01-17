@@ -35,16 +35,16 @@ export default function FileCard({
     if (imgTypes.has(fileType)) {
       return (
         <div
-          className="inline-block w-full rounded-lg transition-all"
+          className="inline-block w-full   transition-all"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           style={{ display: "inline-block" }}
         >
-          <div className="relative w-[50%] rounded-lg border border-border">
+          <div className="relative w-[50%]   border border-border">
             <img
               src={imgSrc}
               alt="generated image"
-              className="m-0 h-auto w-auto rounded-lg border border-border p-0 transition-all"
+              className="m-0 h-auto w-auto   border border-border p-0 transition-all"
             />
             <DownloadButton
               isHovered={isHovered}

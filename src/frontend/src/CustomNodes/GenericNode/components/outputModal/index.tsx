@@ -22,7 +22,7 @@ export default function OutputModal({
           value={activeTab}
           onValueChange={(value) => setActiveTab(value as "Outputs" | "Logs")}
           className={
-            "absolute top-6 flex flex-col self-center overflow-hidden rounded-md border bg-muted text-center"
+            "absolute top-6 flex flex-col self-center overflow-hidden   border bg-muted text-center"
           }
         >
           <TabsList>

@@ -30,10 +30,10 @@ export const ThemeButtons = () => {
   };
 
   return (
-    <div className="relative ml-auto inline-flex rounded-full border border-border p-0.5">
+    <div className="relative ml-auto inline-flex   border border-border p-0.5">
       {/* Sliding Indicator - Behind the Buttons */}
       <div
-        className={`absolute bottom-0.5 left-[1px] top-0.5 w-[30%] rounded-full bg-amber-400 ${
+        className={`absolute bottom-0.5 left-[1px] top-0.5 w-[30%]   bg-amber-400 ${
           hasInteracted ? "transition-all duration-300" : ""
         } dark:bg-purple-400`}
         style={{
@@ -51,10 +51,10 @@ export const ThemeButtons = () => {
       {/* Light Theme Button */}
       <Button
         unstyled
-        className={`relative z-10 inline-flex items-center rounded-full px-1 ${
+        className={`relative z-10 inline-flex items-center   px-1 ${
           selectedTheme === "light"
             ? "text-foreground"
-            : "text-foreground hover:bg-amber-400 hover:text-background"
+            : "text-foreground hover:bg-amber-400 hover:text-black"
         }`}
         onClick={() => handleThemeChange("light")}
       >
@@ -64,10 +64,10 @@ export const ThemeButtons = () => {
       {/* Dark Theme Button */}
       <Button
         unstyled
-        className={`relative z-10 mx-1 inline-flex items-center rounded-full px-1 ${
+        className={`relative z-10 mx-1 inline-flex items-center   px-1 ${
           selectedTheme === "dark"
-            ? "text-background dark:hover:bg-purple-400"
-            : "text-foreground hover:bg-purple-400 hover:text-background"
+            ? "text-black dark:hover:bg-purple-400"
+            : "text-foreground hover:bg-purple-400 hover:text-black"
         }`}
         onClick={() => handleThemeChange("dark")}
       >
@@ -77,10 +77,10 @@ export const ThemeButtons = () => {
       {/* System Theme Button */}
       <Button
         unstyled
-        className={`relative z-10 inline-flex items-center rounded-full px-1 ${
+        className={`relative z-10 inline-flex items-center   px-1 ${
           selectedTheme === "system"
-            ? "bg-foreground text-background"
-            : "hover:bg-foreground hover:text-background"
+            ? "bg-foreground text-black"
+            : "hover:bg-foreground hover:text-black"
         }`}
         onClick={() => handleThemeChange("system")}
       >

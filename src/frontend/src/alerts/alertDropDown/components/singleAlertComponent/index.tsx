@@ -12,7 +12,7 @@ export default function SingleAlert({
 
   return type === "error" ? (
     <div
-      className="mx-2 mb-2 flex rounded-md bg-error-background p-3"
+      className="mx-2 mb-2 flex   bg-error-background p-3"
       key={dropItem.id}
     >
       <div className="flex-shrink-0">
@@ -50,7 +50,7 @@ export default function SingleAlert({
                 removeAlert(dropItem.id);
               }, 500);
             }}
-            className="inline-flex rounded-md p-1.5 text-status-red"
+            className="inline-flex   p-1.5 text-status-red"
           >
             <span className="sr-only">Dismiss</span>
             <IconComponent
@@ -64,7 +64,7 @@ export default function SingleAlert({
     </div>
   ) : type === "notice" ? (
     <div
-      className="mx-2 mb-2 flex rounded-md bg-info-background p-3"
+      className="mx-2 mb-2 flex   bg-info-background p-3"
       key={dropItem.id}
     >
       <div className="flex-shrink-0 cursor-help">
@@ -101,7 +101,7 @@ export default function SingleAlert({
                 removeAlert(dropItem.id);
               }, 500);
             }}
-            className="inline-flex rounded-md p-1.5 text-info-foreground"
+            className="inline-flex   p-1.5 text-info-foreground"
           >
             <span className="sr-only">Dismiss</span>
             <IconComponent
@@ -115,7 +115,7 @@ export default function SingleAlert({
     </div>
   ) : (
     <div
-      className="mx-2 mb-2 flex rounded-md bg-success-background p-3"
+      className="mx-2 mb-2 flex   bg-success-background p-3"
       key={dropItem.id}
     >
       <div className="flex-shrink-0">
@@ -140,7 +140,7 @@ export default function SingleAlert({
                 removeAlert(dropItem.id);
               }, 500);
             }}
-            className="inline-flex rounded-md p-1.5 text-status-green"
+            className="inline-flex   p-1.5 text-status-green"
           >
             <span className="sr-only">Dismiss</span>
             <IconComponent

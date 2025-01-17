@@ -9,6 +9,7 @@ import { APIClassType } from "@/types/api";
 import { memo, useCallback } from "react";
 import SidebarItemsList from "../sidebarItemsList";
 
+// components item sidebar
 export const CategoryDisclosure = memo(function CategoryDisclosure({
   item,
   openCategories,

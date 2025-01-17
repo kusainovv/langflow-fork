@@ -80,10 +80,10 @@ export default function FlowToolbar(): JSX.Element {
           <button
             disabled={!hasApiKey || !validApiKey || !hasStore}
             className={classNames(
-              "relative inline-flex h-8 w-full items-center justify-center gap-1.5 rounded px-3 py-1.5 text-sm font-semibold text-foreground transition-all duration-150 ease-in-out",
+              "relative inline-flex h-8 w-full items-center justify-center gap-1.5 px-3 py-1.5 text-sm font-semibold text-foreground transition-all duration-150 ease-in-out",
               !hasApiKey || !validApiKey || !hasStore
                 ? "cursor-not-allowed text-muted-foreground"
-                : "hover:bg-accent",
+                : "",
             )}
             data-testid="shared-button-flow"
             onClick={() => {
@@ -121,11 +121,11 @@ export default function FlowToolbar(): JSX.Element {
       <Panel className="!m-2" position="top-right">
         <div
           className={
-            "hover:shadow-round-btn-shadow flex items-center justify-center gap-7 rounded-md border bg-silver p-1.5 shadow transition-all"
+            "hover:shadow-round-btn-shadow flex items-center justify-center gap-7   border bg-silver p-1.5 shadow transition-all"
           }
         >
           <div className="flex gap-1.5">
-            <div className="flex h-full w-full gap-1.5 rounded-sm transition-all">
+            <div className="flex h-full w-full gap-1.5   transition-all">
               <PlaygroundButton
                 hasIO={hasIO}
                 open={open}
@@ -144,14 +144,14 @@ export default function FlowToolbar(): JSX.Element {
                     >
                       <Button
                         className={classNames(
-                          "relative inline-flex h-full w-full items-center justify-center gap-1.5 text-sm text-black transition-all duration-150 ease-in-out hover:bg-accent",
+                          "relative inline-flex h-full w-full items-center justify-center gap-1.5 text-sm transition-all duration-150 ease-in-out",
                         )}
                       >
                         <ForwardedIconComponent
                           name="Code2"
-                          className={"h-4 w-4"}
+                          className={"h-4 w-4 text-black"}
                         />
-                        <span className="hidden md:block">API</span>
+                        <span className="hidden md:block text-black">API</span>
                       </Button>
                     </ApiModal>
                   )}

@@ -22,7 +22,7 @@ export default function LoadingComponent({
         />
       </svg>
       <br></br>
-      <span className="animate-pulse text-lg text-primary">Loading...</span>
+      <span className="animate-pulse text-lg text-black">Loading...</span>
     </div>
   );
 }

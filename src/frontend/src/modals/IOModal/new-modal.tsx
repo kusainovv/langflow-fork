@@ -255,24 +255,25 @@ export default function IOModal({
       type={isPlayground ? "full-screen" : undefined}
       onSubmit={() => sendMessage({ repeat: 1 })}
       size="x-large"
-      className="!rounded-[12px] p-0"
+      className="p-0"
     >
       <BaseModal.Trigger>{children}</BaseModal.Trigger>
       {/* TODO ADAPT TO ALL TYPES OF INPUTS AND OUTPUTS */}
       <BaseModal.Content overflowHidden className="h-full">
         {open && (
-          <div className="flex-max-width h-full">
+          <div className="flex"> {/**flex-max-width h-full bg-red-500 */}
             <div
               className={cn(
-                "flex h-full flex-shrink-0 flex-col justify-start transition-all duration-300",
+                "flex bg-light-gray flex-shrink-0 flex-col min-w-[250px] justify-start transition-all duration-300",
                 sidebarOpen
                   ? "absolute z-50 lg:relative lg:w-1/5 lg:max-w-[280px]"
                   : "w-0",
+                "h-[calc(95vh-32px)] shadow-sidebar-chat"
               )}
             >
-              <div className="flex h-full flex-col overflow-y-auto border-r border-border bg-muted p-4 text-center custom-scroll dark:bg-canvas">
+              <div className="flex flex-col overflow-y-auto border-r border-border p-4 text-center custom-scroll dark:bg-canvas">
                 <div className="flex items-center gap-2 pb-8">
-                  <ShadTooltip
+                  {/* <ShadTooltip
                     styleClasses="z-50"
                     side="right"
                     content="Hide sidebar"
@@ -287,9 +288,9 @@ export default function IOModal({
                         className="h-[18px] w-[18px] text-ring"
                       />
                     </Button>
-                  </ShadTooltip>
+                  </ShadTooltip> */}
                   {sidebarOpen && (
-                    <div className="font-semibold">Playground</div>
+                    <div className="font-semibold">Chat</div>
                   )}
                 </div>
                 {sidebarOpen && (
@@ -304,8 +305,8 @@ export default function IOModal({
                 )}
               </div>
             </div>
-            <div className="flex h-full min-w-96 flex-grow bg-background">
-              {selectedViewField && (
+            <div className="flex min-w-96 h-[calc(95vh-32px)] flex-grow bg-silver">
+              {/* {selectedViewField && (
                 <SelectedViewField
                   selectedViewField={selectedViewField}
                   setSelectedViewField={setSelectedViewField}
@@ -316,7 +317,7 @@ export default function IOModal({
                   currentFlowId={currentFlowId}
                   nodes={nodes}
                 />
-              )}
+              )} */}
               <ChatViewWrapper
                 selectedViewField={selectedViewField}
                 visibleSession={visibleSession}

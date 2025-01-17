@@ -22,7 +22,7 @@ export default function PageLayout({
   const navigate = useCustomNavigate();
 
   return (
-    <div className="flex w-full flex-1 flex-col justify-between overflow-auto overflow-x-hidden bg-background">
+    <div className="flex w-full flex-1 flex-col justify-between overflow-auto overflow-x-hidden bg-silver">
       <div className="mx-auto flex w-full max-w-[1440px] flex-1 flex-col">
         <div className="flex flex-col gap-4 p-6 pt-0">
           <CustomBanner />

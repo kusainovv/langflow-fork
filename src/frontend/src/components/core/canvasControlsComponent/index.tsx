@@ -106,7 +106,7 @@ const CanvasControls = ({ children }) => {
   return (
     <Panel
       data-testid="canvas_controls"
-      className="react-flow__controls !m-2 flex !flex-row gap-1.5 border-secondary-hover bg-silver fill-foreground stroke-foreground p-1.5 text-primary shadow [&>button]:border-0 [&>button]:bg-silver [&>button]:shadow-button hover:[&>button]:bg-accent"
+      className="react-flow__controls !m-2 flex !flex-row gap-1.5 border-secondary-hover bg-silver fill-foreground stroke-foreground p-1.5 text-black shadow [&>button]:border-0 [&>button]:bg-silver [&>button]:shadow-button hover:[&>button]:bg-accent"
       position="bottom-left"
     >
       {/* Zoom In */}
@@ -139,7 +139,7 @@ const CanvasControls = ({ children }) => {
         onClick={onToggleInteractivity}
         backgroundClasses={isInteractive ? "" : "bg-destructive"}
         iconClasses={
-          isInteractive ? "" : "text-primary-foreground dark:text-primary"
+          isInteractive ? "" : "text-black-foreground dark:text-black"
         }
         testId="lock_unlock"
       />

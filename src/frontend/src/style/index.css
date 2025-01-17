@@ -34,7 +34,6 @@
     --canvas: #00807F;
     --canvas-dot: 240 5% 65%; /* hsl(240, 5%, 65%) */
     --accent-emerald: 149 80% 90%; /* hsl(149, 80%, 90%) */
-    --accent-emerald-foreground: 161 41% 30%; /* hsl(161, 41%, 30%) */
     --accent-emerald-hover: 152.4 76% 80.4%; /* hsl(152.4, 76%, 80.4%) */
     --accent-indigo: 226 100% 94%; /* hsl(226, 100%, 94%) */
     --accent-indigo-foreground: 243 75% 59%; /* hsl(243, 75%, 59%) */
@@ -194,7 +193,6 @@
     --canvas: #00807F;
     --canvas-dot: 240 5.3% 26.1%; /* hsl(240, 5.3%, 26.1%) */
     --accent-emerald: 164 86% 16%; /* hsl(164, 86%, 16%) */
-    --accent-emerald-foreground: 158 64% 52%; /* hsl(158, 64%, 52%) */
     --accent-emerald-hover: 163.1 88.1% 19.8%; /* hsl(163.1, 88.1%, 19.8%) */
     --accent-indigo: 242 25% 34%; /* hsl(242, 25%, 34%) */
     --accent-indigo-foreground: 234 89% 74%; /* hsl(234, 89%, 74%) */

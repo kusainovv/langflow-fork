@@ -47,7 +47,7 @@ export default function AppHeader(): JSX.Element {
   }, []);
 
   return (
-    <div className="flex h-[62px] w-full bg-navy items-center justify-between gap-2 border-b px-5 py-2.5 dark:bg-background">
+    <div className="flex h-[62px] w-full bg-navy items-center justify-between gap-2 border-b px-5 py-2.5 dark:bg-silver">
       {/* Left Section */}
       <div className={`flex items-center gap-2`}>
         <Button
@@ -61,15 +61,16 @@ export default function AppHeader(): JSX.Element {
           ) : ENABLE_NEW_LOGO ? (
             <LangflowLogo className="h-5 w-6" />
           ) : (
-            <span className="fill-black text-2xl dark:fill-white">⛓️</span>
+            <></>
+            // <span className="fill-black text-2xl dark:fill-white">⛓️</span>
           )}
         </Button>
-        {ENABLE_DATASTAX_LANGFLOW && (
+        {/* {ENABLE_DATASTAX_LANGFLOW && (
           <>
             <CustomOrgSelector />
             <CustomProductSelector />
           </>
-        )}
+        )} */}
       </div>
 
       {/* Middle Section */}
@@ -116,7 +117,7 @@ export default function AppHeader(): JSX.Element {
                 <span
                   className={
                     notificationCenter
-                      ? `absolute left-[31px] top-[10px] h-1 w-1 rounded-full bg-destructive`
+                      ? `absolute left-[31px] top-[10px] h-1 w-1   bg-destructive`
                       : "hidden"
                   }
                 />

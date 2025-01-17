@@ -136,7 +136,7 @@ export default function NodeDescription({
                 "pt-1 text-left text-[13px]",
                 (nodeDescription?.length ?? 0) >= charLimit
                   ? "text-error"
-                  : "text-primary",
+                  : "text-black",
                 placeholderClassName,
               )}
               data-testid="note_char_limit"

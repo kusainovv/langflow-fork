@@ -98,7 +98,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
     }
     // return savedText;
     return (
-      <div className="shrink-0 text-xs font-medium text-accent-emerald-foreground">
+      <div className="shrink-0 text-xs font-medium text-white">
         Saved
       </div>
     );
@@ -119,7 +119,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
         {currentFolder?.name && (
           <div className="hidden truncate md:flex">
             <div
-              className="cursor-pointer truncate text-muted-foreground hover:text-primary"
+              className="cursor-pointer truncate text-muted-foreground hover:text-black"
               onClick={() => {
                 navigate(
                   currentFolder?.id
@@ -146,7 +146,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
                 data-testid="flow-configuration-button"
               >
                 <div
-                  className="truncate font-semibold group-hover:text-primary dark:text-[white]"
+                  className="truncate group-hover:text-black text-white"
                   data-testid="flow_name"
                 >
                   {currentFlow.name}
@@ -154,11 +154,11 @@ export const MenuBar = ({}: {}): JSX.Element => {
               </div>
               <IconComponent
                 name="ChevronDown"
-                className="flex h-5 w-5 text-muted-foreground group-hover:text-primary"
+                className="flex h-5 w-5 text-muted-foreground group-hover:text-black"
               />
             </div>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-44 bg-white dark:bg-background">
+          <DropdownMenuContent className="w-44 bg-white dark:bg-silver">
             <DropdownMenuLabel>Options</DropdownMenuLabel>
             <DropdownMenuItem
               onClick={() => {
@@ -317,7 +317,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
                 <p className="text-muted-foreground">
                   <a
                     href="https://docs.langflow.org/configuration-auto-saving"
-                    className="text-primary underline"
+                    className="text-black underline"
                   >
                     Enable auto-saving
                   </a>{" "}

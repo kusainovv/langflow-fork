@@ -71,12 +71,12 @@ export default function IntComponent({
   };
 
   const iconClassName =
-    "text-placeholder-foreground h-3 w-3 group-increment-hover:text-primary group-decrement-hover:text-primary transition-colors";
-  const stepperClassName = " w-5 rounded-r-sm border-l-[1px]";
+    "text-placeholder-foreground h-3 w-3 group-increment-hover:text-black group-decrement-hover:text-black transition-colors";
+  const stepperClassName = " w-5 border-l-[1px]";
   const incrementStepperClassName =
-    " border-b-[1px] hover:rounded-tr-[5px] hover:bg-muted group-increment";
+    " border-b-[1px] hover:bg-muted group-increment";
   const decrementStepperClassName =
-    " hover:rounded-br-[5px] hover:bg-muted group-decrement";
+    "hover:bg-muted group-decrement";
   const inputRef = useRef(null);
 
   return (

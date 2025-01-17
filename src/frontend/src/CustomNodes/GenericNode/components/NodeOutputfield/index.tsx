@@ -79,8 +79,8 @@ const HideShowButton = memo(
                   ? "text-white"
                   : "text-white hover:text-foreground"
                 : isToolMode
-                  ? "text-white hover:text-secondary-hover"
-                  : "text-white hover:text-primary-hover",
+                  ? "text-white hover:text-black"
+                  : "text-white hover:text-black",
             )}
           />
         </div>
@@ -118,10 +118,10 @@ const InspectButton = memo(
           "icon-size",
           isToolMode
             ? displayOutputPreview && !unknownOutput
-              ? "text-white hover:text-secondary-hover"
+              ? "text-white hover:text-black"
               : "cursor-not-allowed text-white"
             : displayOutputPreview && !unknownOutput
-              ? "text-white hover:text-primary-hover"
+              ? "text-white hover:text-black"
               : "cursor-not-allowed text-white",
           errorOutput ? "text-destructive" : "",
         )}
@@ -269,7 +269,7 @@ function NodeOutputField({
       ref={ref}
       className={cn(
         "relative flex h-11 w-full flex-wrap items-center justify-between bg-navy px-5 py-2",
-        isToolMode && "bg-primary",
+        isToolMode && "bg-silver",
       )}
     >
       <div className="flex w-full items-center justify-end truncate text-sm">

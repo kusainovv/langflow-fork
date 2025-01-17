@@ -209,7 +209,7 @@ export default function StorePage(): JSX.Element {
                 className={
                   (tabActive === "All"
                     ? "border-b-2 border-primary p-3"
-                    : "border-b-2 border-transparent p-3 text-muted-foreground hover:text-primary") +
+                    : "border-b-2 border-transparent p-3 text-muted-foreground hover:text-black") +
                   (loading ? " cursor-not-allowed" : "")
                 }
               >
@@ -225,7 +225,7 @@ export default function StorePage(): JSX.Element {
                 className={
                   (tabActive === "Flows"
                     ? "border-b-2 border-primary p-3"
-                    : "border-b-2 border-transparent p-3 text-muted-foreground hover:text-primary") +
+                    : "border-b-2 border-transparent p-3 text-muted-foreground hover:text-black") +
                   (loading ? " cursor-not-allowed" : "")
                 }
               >
@@ -241,7 +241,7 @@ export default function StorePage(): JSX.Element {
                 className={
                   (tabActive === "Components"
                     ? "border-b-2 border-primary p-3"
-                    : "border-b-2 border-transparent p-3 text-muted-foreground hover:text-primary") +
+                    : "border-b-2 border-transparent p-3 text-muted-foreground hover:text-black") +
                   (loading ? " cursor-not-allowed" : "")
                 }
               >
@@ -295,7 +295,7 @@ export default function StorePage(): JSX.Element {
                 key="id"
                 variant="outline"
                 size="sq"
-                className="gap-2 bg-beta-foreground text-background hover:bg-beta-foreground"
+                className="gap-2 bg-beta-foreground text-black hover:bg-beta-foreground"
               >
                 <CustomLink to={"/store"} className="cursor-pointer">
                   <IconComponent name="X" className="h-4 w-4" />

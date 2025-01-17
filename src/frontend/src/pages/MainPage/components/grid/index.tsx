@@ -80,12 +80,12 @@ const GridComponent = ({ flowData }: { flowData: FlowType }) => {
         draggable
         onDragStart={onDragStart}
         onClick={handleClick}
-        className={`my-1 flex flex-col rounded-lg border border-border bg-background p-4 hover:border-placeholder-foreground hover:shadow-sm ${
+        className={`my-1 flex flex-col border border-border bg-silver p-4 hover:border-placeholder-foreground hover:shadow-sm ${
           isComponent ? "cursor-default" : "cursor-pointer"
         }`}
       >
         <div className="flex w-full items-center gap-4">
-          <div className={cn(`flex rounded-lg p-3`, swatchColors[swatchIndex])}>
+          <div className={cn(`flex p-3`, swatchColors[swatchIndex])}>
             <ForwardedIconComponent
               name={getIcon()}
               aria-hidden="true"
@@ -130,7 +130,7 @@ const GridComponent = ({ flowData }: { flowData: FlowType }) => {
           </div>
         </div>
 
-        <div className="line-clamp-2 h-full pt-5 text-sm text-primary">
+        <div className="line-clamp-2 h-full pt-5 text-sm text-black">
           {flowData.description}
         </div>
       </Card>

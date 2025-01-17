@@ -49,7 +49,7 @@ const TabsSearchComponent = ({
             className={
               (tabActive === tabOption
                 ? "border-b-2 border-primary p-3"
-                : "border-b-2 border-transparent p-3 text-muted-foreground hover:text-primary") +
+                : "border-b-2 border-transparent p-3 text-muted-foreground hover:text-black") +
               (loading ? " cursor-not-allowed" : "")
             }
           >

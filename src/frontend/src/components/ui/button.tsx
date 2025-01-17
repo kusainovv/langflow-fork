@@ -10,25 +10,25 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground  hover:bg-primary-hover",
+        default: "bg-silver text-black-foreground  hover:bg-muted",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive text-destructive-foreground hover:bg-muted",
         outline:
-          "border border-input hover:bg-input hover:text-accent-foreground ",
+          "border border-input hover:bg-muted ",
         primary:
-          "border bg-background text-secondary-foreground hover:bg-muted hover:shadow-sm",
+          "border bg-silver text-black hover:bg-muted",
         warning:
-          "bg-warning-foreground text-warning-text hover:bg-warning-foreground/90 hover:shadow-sm",
+          "bg-warning-foreground text-warning-text hover:bg-muted",
         secondary:
-          "border border-muted bg-muted text-secondary-foreground hover:bg-secondary-foreground/5",
+          "border border-muted bg-muted text-black hover:bg-muted",
         ghost:
-          "text-foreground hover:bg-accent hover:text-accent-foreground disabled:!bg-transparent",
+          "text-foreground hover:bg-muted disabled:!bg-transparent",
         ghostActive:
-          "bg-muted text-foreground hover:bg-secondary-hover hover:text-accent-foreground",
-        menu: "hover:bg-muted hover:text-accent-foreground focus:!ring-0 focus-visible:!ring-0",
+          "bg-muted text-foreground hover:bg-muted",
+        menu: "hover:bg-muted focus:!ring-0 focus-visible:!ring-0",
         "menu-active":
-          "font-semibold hover:bg-muted hover:text-accent-foreground focus-visible:!ring-offset-0",
-        link: "underline-offset-4 hover:underline text-primary",
+          "font-semibold hover:bg-muted focus-visible:!ring-offset-0",
+        link: "underline-offset-4text-primary",
       },
       size: {
         default: "h-10 py-2 px-4",

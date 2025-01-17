@@ -196,7 +196,6 @@ const config = {
           {
             position: "right",
             href: "https://github.com/langflow-ai/langflow",
-            className: "header-github-link",
             target: "_blank",
             rel: null,
           },

@@ -198,7 +198,7 @@ export default function SliderComponent({
   const ringClassInputClass = "ring-[1px] ring-slider-input-border";
 
   return (
-    <div className="w-full rounded-lg pb-2">
+    <div className="w-full   pb-2">
       <Case condition={!sliderButtons}>
         <div className="noflow nowheel nopan nodelete nodrag flex items-center justify-end">
           <div
@@ -214,7 +214,7 @@ export default function SliderComponent({
                 onChange={handleInputChange}
                 onBlur={handleInputBlur}
                 onKeyDown={handleKeyDown}
-                className="relative bottom-[1px] w-full cursor-text rounded-sm bg-transparent text-center font-w95fa text-[0.88rem] arrow-hide"
+                className="relative bottom-[1px] w-full cursor-text   bg-transparent text-center font-w95fa text-[0.88rem] arrow-hide"
                 autoFocus
                 data-testid="slider_input"
               />
@@ -257,12 +257,12 @@ export default function SliderComponent({
           <SliderPrimitive.Track
             data-testid={`slider_track${editNode ? "_advanced" : ""}`}
             className={clsx(
-              "relative h-1 w-full grow rounded-full",
+              "relative h-1 w-full grow  ",
               isDark ? "bg-muted" : "bg-border",
             )}
           >
             <SliderPrimitive.Range
-              className="absolute h-full rounded-full bg-gradient-to-r from-accent-indigo-foreground to-accent-pink-foreground"
+              className="absolute h-full   bg-gradient-to-r from-accent-indigo-foreground to-accent-pink-foreground"
               style={{
                 width: `${percentage}%`,
                 background: `linear-gradient(to right, rgb(79, 70, 229) 0%, ${getThumbColor(percentage)} ${percentage}%)`,
@@ -272,7 +272,7 @@ export default function SliderComponent({
           <SliderPrimitive.Thumb
             data-testid={`slider_thumb${editNode ? "_advanced" : ""}`}
             className={clsx(
-              "block h-6 w-6 rounded-full border-2 border-background shadow-lg",
+              "block h-6 w-6   border-2 border-background shadow-lg",
               isGrabbing ? "cursor-grabbing" : "cursor-grab",
               valueAsNumber === max && "relative left-1",
             )}
@@ -287,7 +287,7 @@ export default function SliderComponent({
 
       {sliderButtons && (
         <div className="my-3">
-          <div className={clsx("flex rounded-md bg-background")}>
+          <div className={clsx("flex   bg-silver")}>
             {sliderButtonsOptions?.map((option) => (
               <button
                 key={option.id}
@@ -297,7 +297,7 @@ export default function SliderComponent({
                   color: getButtonTextColor(option.id),
                 }}
                 className={clsx(
-                  "h-9 flex-1 rounded-md px-3 py-1.5 text-xs font-medium transition-colors duration-200",
+                  "h-9 flex-1   px-3 py-1.5 text-xs font-medium transition-colors duration-200",
                 )}
                 disabled={disabled}
               >

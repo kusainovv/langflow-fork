@@ -315,7 +315,7 @@ export default function AdminPage() {
             <>
               <div
                 className={
-                  "m-4 h-fit overflow-x-hidden overflow-y-scroll rounded-md border-2 bg-background custom-scroll" +
+                  "m-4 h-fit overflow-x-hidden overflow-y-scroll border-2 bg-silver custom-scroll" +
                   (isPending ? " border-0" : "")
                 }
               >
