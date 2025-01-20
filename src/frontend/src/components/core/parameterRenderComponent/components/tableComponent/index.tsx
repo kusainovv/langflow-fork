@@ -219,7 +219,7 @@ const TableComponent = forwardRef<
             }
           }}
         />
-        {!props.tableOptions?.hide_options && (
+        {/* {!props.tableOptions?.hide_options && (
           <TableOptions
             tableOptions={props.tableOptions}
             stateChange={columnStateChange}
@@ -235,7 +235,7 @@ const TableComponent = forwardRef<
               }, 100);
             }}
           />
-        )}
+        )} */}
       </div>
     );
   },

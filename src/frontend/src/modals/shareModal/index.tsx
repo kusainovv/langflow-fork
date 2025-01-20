@@ -171,7 +171,7 @@ export default function ShareModal({
               current?
             </span>
             <br></br>
-            <span className="text-xs text-destructive">
+            <span className="text-xs  ">
               Note: This action is irreversible.
             </span>
           </ConfirmationModal.Content>
@@ -251,7 +251,7 @@ export default function ShareModal({
                   Set {nameComponent} status to public
                 </label>
               </div>
-              <span className="text-xs text-destructive">
+              <span className="text-xs  ">
                 <b>Attention:</b> API keys in specified fields are automatically
                 removed upon sharing.
               </span>

@@ -106,7 +106,7 @@ export default function AppHeader(): JSX.Element {
               <Button
                 ref={notificationRef}
                 variant="ghost"
-                className={`relative ${activeState === "notifications" ? "bg-accent text-accent-foreground" : ""}`}
+                className={`relative ${activeState === "notifications" ? "    " : ""}`}
                 onClick={() =>
                   setActiveState((prev) =>
                     prev === "notifications" ? null : "notifications",
@@ -117,7 +117,7 @@ export default function AppHeader(): JSX.Element {
                 <span
                   className={
                     notificationCenter
-                      ? `absolute left-[31px] top-[10px] h-1 w-1   bg-destructive`
+                      ? `absolute left-[31px] top-[10px] h-1 w-1   bg-red-500`
                       : "hidden"
                   }
                 />
@@ -141,7 +141,7 @@ export default function AppHeader(): JSX.Element {
             >
               <Button
                 variant="ghost"
-                className={` ${lastPath === "store" ? "bg-accent text-accent-foreground" : ""}`}
+                className={` ${lastPath === "store" ? "    " : ""}`}
                 onClick={() => {
                   navigate("/store");
                 }}

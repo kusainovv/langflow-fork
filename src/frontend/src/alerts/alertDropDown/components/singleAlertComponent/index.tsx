@@ -82,7 +82,7 @@ export default function SingleAlert({
           {dropItem.link ? (
             <CustomLink
               to={dropItem.link}
-              className="whitespace-nowrap font-medium text-info-foreground hover:text-accent-foreground"
+              className="whitespace-nowrap font-medium text-info-foreground hover:  "
             >
               Details
             </CustomLink>

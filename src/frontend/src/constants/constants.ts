@@ -214,7 +214,7 @@ export const EXPORT_CODE_DIALOG =
  * @constant
  */
 export const COLUMN_DIV_STYLE =
-  " w-full h-full flex overflow-auto flex-col bg-muted px-16 ";
+  " w-full h-full flex overflow-auto flex-col   px-16 ";
 
 export const NAV_DISPLAY_STYLE =
   " w-full flex justify-between py-12 pb-2 px-6 ";

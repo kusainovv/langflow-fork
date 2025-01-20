@@ -544,7 +544,7 @@ export default function Page({ view }: { view?: boolean }): JSX.Element {
             onSelectionEnd={onSelectionEnd}
             onSelectionStart={onSelectionStart}
             connectionRadius={30}
-            edgeTypes={edgeTypes}
+            // edgeTypes={edgeTypes}
             connectionLineComponent={ConnectionLineComponent}
             onDragOver={onDragOver}
             onNodeDragStop={onNodeDragStop}
@@ -552,7 +552,7 @@ export default function Page({ view }: { view?: boolean }): JSX.Element {
             onSelectionChange={onSelectionChange}
             deleteKeyCode={[]}
             fitView={isEmptyFlow.current ? false : true}
-            className="theme-attribution"
+            // className="theme-attribution"
             minZoom={0.01}
             maxZoom={8}
             zoomOnScroll={!view}
@@ -588,7 +588,7 @@ export default function Page({ view }: { view?: boolean }): JSX.Element {
             )}
             <Panel
               className={cn(
-                "react-flow__controls !m-2 flex gap-1.5 border border-secondary-hover bg-silver fill-foreground stroke-foreground p-1.5 text-black shadow transition-all duration-300 [&>button]:border-0 [&>button]:bg-silver hover:[&>button]:bg-accent",
+                "react-flow__controls !m-2 flex gap-1.5 border bg-silver fill-foreground stroke-foreground p-1.5 text-black shadow transition-all duration-300 [&>button]:border-0 [&>button]:bg-silver",
                 "pointer-events-auto opacity-100 group-data-[open=true]/sidebar-wrapper:pointer-events-none group-data-[open=true]/sidebar-wrapper:-translate-x-full group-data-[open=true]/sidebar-wrapper:opacity-0",
               )}
               position="top-left"

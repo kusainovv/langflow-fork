@@ -167,11 +167,11 @@ export default function ChatInput({
   if (noInput) {
     return (
       <div className="flex h-full w-full flex-col items-center justify-center">
-        <div className="flex w-full flex-col items-center justify-center gap-3   border border-input bg-muted p-2 py-4">
+        <div className="flex w-full flex-col items-center justify-center gap-3   border border-input   p-2 py-4">
           {!lockChat ? (
             <Button
               data-testid="button-send"
-              className="font-semibold"
+              className=" "
               onClick={() => {
                 sendMessage({
                   repeat: 1,
@@ -185,7 +185,7 @@ export default function ChatInput({
               onClick={stopBuilding}
               data-testid="button-stop"
               unstyled
-              className="form-modal-send-button cursor-pointer bg-silver text-foreground hover:bg-secondary-hover dark:hover:bg-input"
+              className="form-modal-send-button cursor-pointer bg-silver text-foreground"
             >
               <div className="flex items-center gap-2   text-[14px] font-medium">
                 Stop
@@ -194,7 +194,7 @@ export default function ChatInput({
             </Button>
           )}
 
-          <p className="text-muted-foreground">
+          <p className="  ">
             Add a{" "}
             <a
               className="underline underline-offset-4"
@@ -212,7 +212,7 @@ export default function ChatInput({
 
   return (
     <div className="flex w-full flex-col-reverse">
-      <div className="flex w-full flex-col bg-white shadow-field p-4 hover:border-muted-foreground focus:border-[1.75px] has-[:focus]:border-primary">
+      <div className="flex w-full flex-col bg-white shadow-field p-4 hover:  focus:border-[1.75px] has-[:focus]:border-primary">
         <TextAreaWrapper
           checkSendingOk={checkSendingOk}
           send={send}

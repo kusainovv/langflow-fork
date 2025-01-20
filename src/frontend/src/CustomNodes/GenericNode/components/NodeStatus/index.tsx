@@ -88,7 +88,7 @@ export default function NodeStatus({
   const getBaseBorderClass = (selected) => {
     let className =
       selected && !isBuilding
-        ? " border ring-[0.75px] ring-muted-foreground border-muted-foreground"
+        ? " border ring-[0.75px] ring-muted-foreground  "
         : "";
     let frozenClass = selected ? "border-ring-frozen" : "border-frozen";
     let updateClass =
@@ -171,7 +171,7 @@ export default function NodeStatus({
   // Keep the existing icon classes
   const iconClasses = cn(
     "play-button-icon",
-    isHovered ? "text-foreground" : "text-placeholder-foreground",
+    isHovered ? "text-foreground" : "",
     BuildStatus.BUILDING === buildStatus && !isHovered && "animate-spin",
   );
 
@@ -179,7 +179,7 @@ export default function NodeStatus({
     if (BuildStatus.BUILDING === buildStatus && isHovered) {
       return "Stop build";
     }
-    return "Run component 2";
+    return "Run component";
   };
 
   return showNode ? (
@@ -205,7 +205,7 @@ export default function NodeStatus({
           >
             <div className="cursor-help">
               {conditionSuccess && validationStatus?.data?.duration ? (
-                <div className="font-w95fa mr-1 flex gap-1   bg-accent-emerald px-1 text-[11px] font-bold text-white">
+                <div className="font-w95fa mr-1 flex gap-1    -emerald px-1 text-[11px] font-bold text-white">
                   <Check className="h-4 w-4 items-center self-center" />
                   <span>
                     {normalizeTimeString(validationStatus?.data?.duration)}
@@ -222,7 +222,7 @@ export default function NodeStatus({
           {data.node?.beta && showNode && (
             <Badge
               size="sq"
-              className="pointer-events-none mr-1 flex h-[22px] w-10 justify-center bg-accent-pink text-accent-pink-foreground"
+              className="pointer-events-none mr-1 flex h-[22px] w-10 justify-center"
             >
               <span className="text-[11px]">Beta</span>
             </Badge>
@@ -237,7 +237,7 @@ export default function NodeStatus({
             onClick={handleClickRun}
           >
             {showNode && (
-              <Button unstyled className="group">
+              <Button unstyled className="bg-silver shadow-button py-1 px-8">
                 <div data-testid={`button_run_` + display_name.toLowerCase()}>
                   <IconComponent
                     name={iconName}

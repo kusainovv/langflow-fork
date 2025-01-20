@@ -26,7 +26,7 @@ export default function TemplateCardComponent({
   return (
     <div
       data-testid={`template-${convertTestName(example.name)}`}
-      className="group flex cursor-pointer gap-3 overflow-hidden   p-3 hover:bg-muted focus-visible:bg-muted"
+      className="group flex cursor-pointer gap-3 overflow-hidden   p-3 hover:  focus-visible: "
       tabIndex={0}
       onKeyDown={handleKeyDown}
       onClick={onClick}
@@ -46,7 +46,7 @@ export default function TemplateCardComponent({
         <div>
           <div className="flex w-full items-center">
             <h3
-              className="line-clamp-3 font-semibold"
+              className="line-clamp-3  "
               data-testid={`template_${convertTestName(example.name)}`}
             >
               {example.name}
@@ -56,7 +56,7 @@ export default function TemplateCardComponent({
               className="mr-3 h-5 w-5 shrink-0 translate-x-0 opacity-0 transition-all duration-300 group-hover:translate-x-3 group-hover:opacity-100 group-focus-visible:translate-x-3 group-focus-visible:opacity-100"
             />
           </div>
-          <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">
+          <p className="mt-2 line-clamp-2 text-sm   ">
             {example.description}
           </p>
         </div>

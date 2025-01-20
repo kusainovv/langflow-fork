@@ -75,7 +75,7 @@ export default function SelectionMenu({
                 unstyled
                 className={`${
                   disable
-                    ? "flex h-full w-full cursor-not-allowed items-center justify-between text-sm text-muted-foreground"
+                    ? "flex h-full w-full cursor-not-allowed items-center justify-between text-sm   "
                     : "flex h-full w-full items-center justify-between text-sm"
                 }`}
                 onClick={onClick}
@@ -96,7 +96,7 @@ export default function SelectionMenu({
               unstyled
               className={`${
                 disable
-                  ? "flex h-full w-full cursor-not-allowed items-center justify-between text-sm text-muted-foreground"
+                  ? "flex h-full w-full cursor-not-allowed items-center justify-between text-sm   "
                   : "flex h-full w-full items-center justify-between text-sm"
               }`}
               onClick={onClick}

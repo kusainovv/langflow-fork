@@ -9,7 +9,7 @@ const BUTTON_STATES = {
   NO_INPUT: "bg-high-indigo text-black",
   HAS_CHAT_VALUE: "text-black",
   SHOW_STOP:
-    "bg-muted hover:bg-secondary-hover dark:hover:bg-input text-foreground cursor-pointer",
+    "text-foreground cursor-pointer",
   DEFAULT:
     "bg-silver text-black-foreground hover:bg-silver-hover hover:text-black",
 };

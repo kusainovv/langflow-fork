@@ -102,7 +102,7 @@ export default function InputGlobalComponent({
       optionsIcon="Globe"
       optionsButton={
         <GlobalVariableModal disabled={disabled}>
-          <CommandItem value="doNotFilter-addNewVariable">
+          <CommandItem value="doNotFilter-addNewVariable" className="cursor-pointer">
             <ForwardedIconComponent
               name="Plus"
               className={cn("mr-2 h-4 w-4 text-black")}

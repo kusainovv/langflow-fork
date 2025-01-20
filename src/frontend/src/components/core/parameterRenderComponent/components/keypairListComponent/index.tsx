@@ -98,17 +98,17 @@ const KeypairListComponent = ({
         }
         data-testid={id}
         className={cn(
-          "hit-area-icon group flex items-center justify-center",
+          "hit-area-icon group flex items-center justify-center min-h-[36px] shadow-button",
           disabled
             ? "pointer-events-none bg-silver hover:bg-silver"
             : "",
-          isFirstItem ? "bg-silver hover:bg-muted" : "hover:bg-smooth-red",
+          isFirstItem ? "bg-silver" : "",
         )}
       >
         <IconComponent
           name={iconName}
           className={cn(
-            "icon-size justify-self-center text-muted-foreground",
+            "icon-size justify-self-center   ",
             !disabled && "hover:cursor-pointer hover:text-foreground",
             isFirstItem
               ? "group-hover:text-foreground"

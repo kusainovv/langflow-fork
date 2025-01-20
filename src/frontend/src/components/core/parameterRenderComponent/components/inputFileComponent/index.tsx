@@ -101,7 +101,7 @@ export default function InputFileComponent({
                 type="text"
                 className={cn(
                   "primary-input h-9 w-full cursor-pointer text-sm focus:border-border focus:outline-none focus:ring-0",
-                  !value && "text-placeholder-foreground",
+                  !value && "",
                   editNode && "h-6",
                 )}
                 value={value || "Upload a file..."}
@@ -129,7 +129,7 @@ export default function InputFileComponent({
                   name={value ? "CircleCheckBig" : "Upload"}
                   className={cn(
                     value && "text-black",
-                    isDisabled && "text-muted-foreground",
+                    isDisabled && "  ",
                     "h-4 w-4",
                   )}
                   strokeWidth={2}

@@ -57,7 +57,7 @@ function NoteNode({
           setSize({ width: width - 25, height: height - 25 });
         }}
         isVisible={selected}
-        lineClassName="!border !border-muted-foreground"
+        lineClassName="!border ! "
       />
       <div
         data-testid="note_node"

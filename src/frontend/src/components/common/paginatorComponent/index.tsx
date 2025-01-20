@@ -47,7 +47,7 @@ export default function PaginatorComponent({
       <div className="flex items-center justify-end gap-1 text-[13px] text-black">
         {(pageIndex - 1) * pageSize + 1}-
         {Math.min(totalRowsCount, (pageIndex - 1) * pageSize + pageSize)}{" "}
-        <span className="text-muted-foreground">
+        <span className="  ">
           of {totalRowsCount}{" "}
           {isComponent === undefined
             ? "items"
@@ -76,7 +76,7 @@ export default function PaginatorComponent({
               ))}
             </SelectContent>
           </Select>
-          <span className="text-muted-foreground">of {maxIndex} pages</span>
+          <span className="  ">of {maxIndex} pages</span>
         </div>
         <div className="flex items-center gap-1">
           <Button

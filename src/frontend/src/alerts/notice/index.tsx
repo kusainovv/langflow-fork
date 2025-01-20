@@ -62,7 +62,7 @@ export default function NoticeAlert({
               {link && (
                 <CustomLink
                   to={link}
-                  className="whitespace-nowrap font-medium text-info-foreground hover:text-accent-foreground"
+                  className="whitespace-nowrap font-medium text-info-foreground hover:  "
                 >
                   Details
                 </CustomLink>

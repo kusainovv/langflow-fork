@@ -40,7 +40,7 @@ const EditNodeModal = ({
           {data.node?.display_name ?? data.type}
         </span>
         <div>
-          <Badge size="sm" variant={isDark ? "gray" : "secondary"}>
+          <Badge size="sm">
             ID: {data.id}
           </Badge>
         </div>

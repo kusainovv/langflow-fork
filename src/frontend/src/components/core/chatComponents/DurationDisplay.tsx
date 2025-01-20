@@ -48,7 +48,7 @@ export default function DurationDisplay({
       className={`inline-flex items-center justify-between gap-1 px-2 text-sm ${
         duration !== undefined
           ? "bg-emerald-50 text-emerald-600 dark:bg-[#022C22] dark:text-emerald-500"
-          : "bg-muted text-muted-foreground"
+          : "    "
       }`}
     >
       {duration === undefined ? (

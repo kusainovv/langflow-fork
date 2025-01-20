@@ -23,7 +23,7 @@ export default function LinkComponent({
 
   const buttonClassName = classNames(
     "nopan w-full shrink-0",
-    disabled ? "cursor-not-allowed text-ring" : "hover:text-accent-foreground",
+    disabled ? "cursor-not-allowed text-ring" : "hover:  ",
   );
 
   const ButtonContent = ({ icon, text }: { icon: string; text: string }) => {

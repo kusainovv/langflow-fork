@@ -176,24 +176,24 @@ export default function SliderComponent({
     document.documentElement,
   ).getPropertyValue("--accent-indigo-foreground");
 
-  const accentPinkForeground = getComputedStyle(
-    document.documentElement,
-  ).getPropertyValue("--accent-pink-foreground");
+  // const accentPinkForeground = getComputedStyle(
+  //   document.documentElement,
+  // ).getPropertyValue("--accent-pink-foreground");
 
-  const getThumbColor = (percentage) => {
-    if (accentIndigoForeground && accentPinkForeground) {
-      return buildColorByName(
-        accentIndigoForeground,
-        accentPinkForeground,
-        percentage,
-      );
-    }
-    return buildColorByName(
-      DEFAULT_ACCENT_INDIGO_FOREGROUND_COLOR,
-      DEFAULT_ACCENT_PINK_FOREGROUND_COLOR,
-      percentage,
-    );
-  };
+  // const getThumbColor = (percentage) => {
+  //   if (accentIndigoForeground && accentPinkForeground) {
+  //     return buildColorByName(
+  //       accentIndigoForeground,
+  //       accentPinkForeground,
+  //       percentage,
+  //     );
+  //   }
+  //   return buildColorByName(
+  //     DEFAULT_ACCENT_INDIGO_FOREGROUND_COLOR,
+  //     DEFAULT_ACCENT_PINK_FOREGROUND_COLOR,
+  //     percentage,
+  //   );
+  // };
 
   const ringClassInputClass = "ring-[1px] ring-slider-input-border";
 
@@ -257,29 +257,28 @@ export default function SliderComponent({
           <SliderPrimitive.Track
             data-testid={`slider_track${editNode ? "_advanced" : ""}`}
             className={clsx(
-              "relative h-1 w-full grow  ",
-              isDark ? "bg-muted" : "bg-border",
+              "relative h-1 w-full grow  bg-silver",
             )}
           >
             <SliderPrimitive.Range
-              className="absolute h-full   bg-gradient-to-r from-accent-indigo-foreground to-accent-pink-foreground"
+              className="absolute h-full"
               style={{
                 width: `${percentage}%`,
-                background: `linear-gradient(to right, rgb(79, 70, 229) 0%, ${getThumbColor(percentage)} ${percentage}%)`,
+                // background: `linear-gradient(to right, rgb(79, 70, 229) 0%, ${getThumbColor(percentage)} ${percentage}%)`,
               }}
             />
           </SliderPrimitive.Track>
           <SliderPrimitive.Thumb
             data-testid={`slider_thumb${editNode ? "_advanced" : ""}`}
             className={clsx(
-              "block h-6 w-6   border-2 border-background shadow-lg",
+              "block h-6 w-6 border bg-light-gray shadow-button",
               isGrabbing ? "cursor-grabbing" : "cursor-grab",
               valueAsNumber === max && "relative left-1",
             )}
             onPointerDown={() => setIsGrabbing(true)}
             onPointerUp={() => setIsGrabbing(false)}
             style={{
-              backgroundColor: getThumbColor(percentage),
+              // backgroundColor: getThumbColor(percentage),
             }}
           />
         </SliderPrimitive.Root>

@@ -119,7 +119,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
         {currentFolder?.name && (
           <div className="hidden truncate md:flex">
             <div
-              className="cursor-pointer truncate text-muted-foreground hover:text-black"
+              className="cursor-pointer truncate text-white"
               onClick={() => {
                 navigate(
                   currentFolder?.id
@@ -133,7 +133,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
           </div>
         )}
       </div>
-      <div className="hidden w-fit shrink-0 select-none font-normal text-muted-foreground md:flex">
+      <div className="hidden w-fit shrink-0 select-none font-normal text-white md:flex">
         /
       </div>
 
@@ -146,7 +146,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
                 data-testid="flow-configuration-button"
               >
                 <div
-                  className="truncate group-hover:text-black text-white"
+                  className="truncate text-white"
                   data-testid="flow_name"
                 >
                   {currentFlow.name}
@@ -154,7 +154,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
               </div>
               <IconComponent
                 name="ChevronDown"
-                className="flex h-5 w-5 text-muted-foreground group-hover:text-black"
+                className="flex h-5 w-5 text-white group-hover:text-white"
               />
             </div>
           </DropdownMenuTrigger>
@@ -311,10 +311,10 @@ export const MenuBar = ({}: {}): JSX.Element => {
                 : "Never")
             ) : (
               <div className="flex w-48 flex-col gap-1 py-1">
-                <h2 className="text-base font-semibold">
+                <h2 className="text-base  ">
                   Auto-saving is disabled
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="  ">
                   <a
                     href="https://docs.langflow.org/configuration-auto-saving"
                     className="text-black underline"
@@ -329,7 +329,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
           side="bottom"
           styleClasses="cursor-default z-10"
         >
-          <div className="flex cursor-default items-center gap-2 truncate text-sm text-muted-foreground">
+          <div className="flex cursor-default items-center gap-2 truncate text-sm   ">
             <div className="flex cursor-default items-center gap-2 truncate text-sm">
               <div className="w-full truncate text-xs">
                 {printByBuildStatus()}

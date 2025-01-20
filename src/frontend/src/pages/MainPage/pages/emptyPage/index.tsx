@@ -21,7 +21,7 @@ export const EmptyPage = ({ setOpenModal }: EmptyPageProps) => {
             <span className="fill-foreground text-4xl">⛓️</span>
           )}
           <h3
-            className="pt-5 font-w95fa text-2xl font-semibold text-foreground"
+            className="pt-5 font-w95fa text-2xl   text-foreground"
             data-testid="mainpage_title"
           >
             {folders?.length > 1 ? "Empty folder" : "Start building"}
@@ -39,7 +39,7 @@ export const EmptyPage = ({ setOpenModal }: EmptyPageProps) => {
               aria-hidden="true"
               className="h-4 w-4"
             />
-            <span className="hidden whitespace-nowrap font-semibold md:inline">
+            <span className="hidden whitespace-nowrap   md:inline">
               New Flow
             </span>
           </Button>

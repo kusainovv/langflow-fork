@@ -322,7 +322,7 @@ export default function AdminPage() {
                 <Table className={"table-fixed outline-1"}>
                   <TableHeader
                     className={
-                      isPending ? "hidden" : "table-fixed bg-muted outline-1"
+                      isPending ? "hidden" : "table-fixed   outline-1"
                     }
                   >
                     <TableRow>

@@ -29,7 +29,7 @@ export const ChatViewWrapper = ({
     <div
       className={cn(
         "flex h-full w-full flex-col justify-between p-4",
-        selectedViewField ? "hidden" : "",
+        // selectedViewField ? "hidden" : "",
       )}
     >
       <div className="mb-4 h-[5%] text-base">
@@ -41,8 +41,8 @@ export const ChatViewWrapper = ({
           </div>
         )}
         <div className={cn(sidebarOpen ? "lg:hidden" : "")}>
-          <div className="flex items-center gap-2">
-            <Button
+          {/* <div className="flex items-center gap-2"> */}
+            {/* <Button
               variant="ghost"
               size="icon"
               onClick={() => setSidebarOpen(true)}
@@ -52,9 +52,10 @@ export const ChatViewWrapper = ({
                 name="PanelLeftOpen"
                 className="h-[18px] w-[18px] text-ring"
               />
-            </Button>
-            <div>Playground</div>
-          </div>
+            </Button> */}
+            {/* <div>Playground</div> */}
+          {/* </div> */}
+           <div>Playground</div>
         </div>
         <div
           className={cn(
@@ -65,7 +66,7 @@ export const ChatViewWrapper = ({
         >
           <ShadTooltip side="bottom" styleClasses="z-50" content="New Chat">
             <Button
-              className="mr-2 h-[32px] w-[32px] hover:bg-secondary-hover"
+              className="mr-2 h-[32px] w-[32px]"
               variant="ghost"
               size="icon"
               onClick={() => {

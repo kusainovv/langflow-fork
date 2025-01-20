@@ -35,12 +35,12 @@ export default function SimplifiedCodeTabComponent({
       className="mt-2 flex w-full flex-col overflow-hidden   text-left dark"
       data-testid="chat-code-tab"
     >
-      <div className="flex w-full items-center justify-between border border-b-0 border-border bg-muted px-4 py-2">
-        <span className="dar text-sm font-semibold text-white">{language}</span>
+      <div className="flex w-full items-center justify-between border border-b-0 border-border   px-4 py-2">
+        <span className="dar text-sm   text-white">{language}</span>
         <Button
           variant="ghost"
           size="icon"
-          className="text-muted-foreground hover:bg-card"
+          className="   hover:bg-card"
           data-testid="copy-code-button"
           onClick={copyToClipboard}
         >

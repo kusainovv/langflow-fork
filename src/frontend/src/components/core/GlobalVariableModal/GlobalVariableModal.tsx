@@ -139,7 +139,7 @@ export default function GlobalVariableModal({
         {children}
       </BaseModal.Trigger>
       <BaseModal.Content>
-        <div className="flex h-full w-full flex-col gap-4">
+        <div className="flex h-full w-full flex-col gap-4 px-4">
           <div className="space-y-2">
             <Label>Type*</Label>
             <Tabs
@@ -206,13 +206,14 @@ export default function GlobalVariableModal({
               popoverWidth="520px"
               optionsPlaceholder="Fields"
             />
-            <div className="text-xs text-muted-foreground">
+            <div className="text-xs   ">
               Selected fields will auto-apply the variable as a default value.
             </div>
           </div>
         </div>
       </BaseModal.Content>
       <BaseModal.Footer
+      
         submit={{
           label: `${initialData ? "Update" : "Save"} Variable`,
           dataTestId: "save-variable-btn",

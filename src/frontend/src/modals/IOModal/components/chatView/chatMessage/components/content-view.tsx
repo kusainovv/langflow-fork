@@ -36,7 +36,7 @@ export const ErrorView = ({
               <LogoIcon />
               <div className="flex items-center">
                 <TextShimmer className="" duration={1}>
-                  Flow running...
+                  Thinking...
                 </TextShimmer>
               </div>
             </motion.div>
@@ -60,7 +60,7 @@ export const ErrorView = ({
                         <div className="" key={contentIndex}>
                           <div className="mb-2 flex items-center">
                             <ForwardedIconComponent
-                              className="mr-2 h-[18px] w-[18px] text-destructive"
+                              className="mr-2 h-[18px] w-[18px]  "
                               name="OctagonAlert"
                             />
                             {content.component && (
@@ -87,7 +87,7 @@ export const ErrorView = ({
                             )}
                           </div>
                           <div>
-                            <h3 className="pb-3 font-semibold">
+                            <h3 className="pb-3  ">
                               Error details:
                             </h3>
                             {content.field && (
@@ -170,7 +170,7 @@ export const ErrorView = ({
                             )}
                             {content.solution && (
                               <div className="mt-4">
-                                <h3 className="pb-3 font-semibold">
+                                <h3 className="pb-3  ">
                                   Steps to fix:
                                 </h3>
                                 <ol className="list-decimal pl-5">

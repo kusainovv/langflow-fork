@@ -118,7 +118,6 @@ const config = {
         "success-background": "var(--success-background)",
         "success-foreground": "var(--success-foreground)",
         "accent-pink": "hsl(var(--accent-pink))",
-        "accent-pink-foreground": "hsl(var(--accent-pink-foreground))",
         filter: {
           foreground: "var(--filter-foreground)",
           background: "var(--filter-background)",
@@ -153,7 +152,6 @@ const config = {
         "emerald-hard": "hsl(var(--emeral-hard))",
         placeholder: "hsl(var(--placeholder))",
         "hard-zinc": "hsl(var(--hard-zinc))",
-        "smooth-red": "hsl(var(--smooth-red))",
         "placeholder-foreground": "hsl(var(--placeholder-foreground))",
         primary: {
           DEFAULT: "var(--canvas)",
@@ -165,25 +163,13 @@ const config = {
           foreground: "black",
           hover: "black",
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
+        // destructive: {
+        //   DEFAULT: "hsl(var(--destructive))",
+        //   foreground: "hsl(var(--destructive-foreground))",
+        // },
         accent: {
           DEFAULT: "var(--silver)",
           foreground: "var(--silver)",
-        },
-        "accent-indigo": {
-          DEFAULT: "hsl(var(--accent-indigo))",
-          foreground: "hsl(var(--accent-indigo-foreground))",
-        },
-        "accent-pink": {
-          DEFAULT: "hsl(var(--accent-pink))",
-          foreground: "hsl(var(--accent-pink-foreground))",
         },
         popover: {
           DEFAULT: "var(--silver)",
@@ -276,7 +262,15 @@ const config = {
         "button": "inset 2px 2px 0px 0px rgba(223, 223, 223, 1), inset -2px -2px 0px 0px rgba(127, 127, 127, 1), inset 1px 1px 0px 0px rgba(255, 255, 255, 1), inset -1px -1px 0px 0px rgba(0, 0, 0, 1)",
         "dropdown-item": "inset 2px 2px 0px 0px rgba(0,0,0,1.00), inset -2px -2px 0px 0px rgba(193,193,193,1.00), inset 1px 1px 0px 0px rgba(128,128,128,1.00), inset -1px -1px 0px 0px rgba(255,255,255,1.00)",
         "sidebar-item-deactivated": "0px 2px 0px 0px rgba(0, 0, 0, 1.00)",
-        "tooltip": `
+        "alert-custom": `
+          inset 3px 3px 0px 0px rgba(223, 223, 223, 1), 
+          inset -3px -3px 0px 0px rgba(127, 127, 127, 1), 
+          inset 2px 2px 0px 0px rgba(255, 255, 255, 1), 
+          inset -2px -2px 0px 0px rgba(0, 0, 0, 1), 
+          inset 1px 1px 0px 0px rgba(0, 0, 0, 1), 
+          inset -1px -1px 0px 0px rgba(0, 0, 0, 1); 
+        `,
+        "tab-activated":  `
           inset 3px 3px 0px 0px rgba(223, 223, 223, 1.00),
           inset -3px -3px 0px 0px rgba(127, 127, 127, 1.00),
           inset 2px 2px 0px 0px rgba(255, 255, 255, 1.00),
@@ -284,22 +278,20 @@ const config = {
           inset 1px 1px 0px 0px rgba(0, 0, 0, 1.00),
           inset -1px -1px 0px 0px rgba(0, 0, 0, 1.00)
         `,
-        "tab-activated":  `
-        inset 3px 3px 0px 0px rgba(223, 223, 223, 1.00),
-        inset -3px -3px 0px 0px rgba(127, 127, 127, 1.00),
-        inset 2px 2px 0px 0px rgba(255, 255, 255, 1.00),
-        inset -2px -2px 0px 0px rgba(0, 0, 0, 1.00),
-        inset 1px 1px 0px 0px rgba(0, 0, 0, 1.00),
-        inset -1px -1px 0px 0px rgba(0, 0, 0, 1.00)
-      `,
-        "tab-deactivated": `
-        inset 1px 1px 0px 0px rgba(128, 128, 128, 1.00),
-        inset -1px -1px 0px 0px rgba(255, 255, 255, 1.00)
-      `,
+      "tab-deactivated": `
+          inset 1px 1px 0px 0px rgba(128, 128, 128, 1.00),
+          inset -1px -1px 0px 0px rgba(255, 255, 255, 1.00)
+        `,
       "sidebar-chat": `
           inset 1px 1px 0px 0px rgba(128, 128, 128, 1.00),
           inset -1px -1px 0px 0px rgba(255, 255, 255, 1.00)
-        `
+        `,
+      "tab": `
+        inset -2px 0px 0px 0px #808080, 
+        inset -1px 0px 0px 0px #000000, 
+        inset 2px 0px 0px 0px #c0c0c0, 
+        inset 1px 0px 0px 0px #ffffff
+      `
       },
       backdropBlur: {
         xs: "2px",

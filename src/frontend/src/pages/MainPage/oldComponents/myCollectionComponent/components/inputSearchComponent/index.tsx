@@ -46,11 +46,11 @@ const InputSearchComponent = ({
         <button
           onClick={onClick}
           disabled={loading}
-          className="absolute bottom-0 right-4 top-0 my-auto h-6 cursor-pointer stroke-1 text-muted-foreground"
+          className="absolute bottom-0 right-4 top-0 my-auto h-6 cursor-pointer stroke-1   "
           data-testid="search-store-button"
         >
           <ForwardedIconComponent
-            name={loading ? "Loader2" : "Search"}
+            name={loading ? "Loader" : "Search"}
             className={loading ? "animate-spin cursor-not-allowed" : ""}
           />
         </button>

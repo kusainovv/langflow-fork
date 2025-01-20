@@ -185,7 +185,7 @@ export default function SessionSelector({
           <SelectContent side="right" align="start" className="p-0">
             <SelectItem
               value="rename"
-              className="cursor-pointer px-3 py-2 focus:bg-muted"
+              className="cursor-pointer px-3 py-2 focus: "
             >
               <div className="flex items-center">
                 <IconComponent name="SquarePen" className="mr-2 h-4 w-4" />
@@ -194,7 +194,7 @@ export default function SessionSelector({
             </SelectItem>
             <SelectItem
               value="messageLogs"
-              className="cursor-pointer px-3 py-2 focus:bg-muted"
+              className="cursor-pointer px-3 py-2 focus: "
             >
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center">
@@ -205,7 +205,7 @@ export default function SessionSelector({
             </SelectItem>
             <SelectItem
               value="delete"
-              className="cursor-pointer px-3 py-2 focus:bg-muted"
+              className="cursor-pointer px-3 py-2 focus: "
             >
               <div className="flex items-center text-status-red hover:text-status-red">
                 <IconComponent name="Trash2" className="mr-2 h-4 w-4" />

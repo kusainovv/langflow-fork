@@ -82,7 +82,7 @@ export default function FlowToolbar(): JSX.Element {
             className={classNames(
               "relative inline-flex h-8 w-full items-center justify-center gap-1.5 px-3 py-1.5 text-sm font-semibold text-foreground transition-all duration-150 ease-in-out",
               !hasApiKey || !validApiKey || !hasStore
-                ? "cursor-not-allowed text-muted-foreground"
+                ? "cursor-not-allowed   "
                 : "",
             )}
             data-testid="shared-button-flow"
@@ -121,7 +121,7 @@ export default function FlowToolbar(): JSX.Element {
       <Panel className="!m-2" position="top-right">
         <div
           className={
-            "hover:shadow-round-btn-shadow flex items-center justify-center gap-7   border bg-silver p-1.5 shadow transition-all"
+            "hover:shadow-round-btn-shadow flex items-center justify-center gap-7 border bg-silver p-1.5 shadow transition-all"
           }
         >
           <div className="flex gap-1.5">

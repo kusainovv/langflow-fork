@@ -92,7 +92,7 @@ const HomePage = ({ type }) => {
           {/* mt-10 to mt-8 for Datastax LF */}
           <div className="flex flex-1 flex-col justify-start px-5 pt-10">
             <div className="flex h-full flex-col justify-start">
-              <HeaderComponent
+              {/* <HeaderComponent
                 folderName={folderName}
                 flowType={flowType}
                 setFlowType={setFlowType}
@@ -101,7 +101,7 @@ const HomePage = ({ type }) => {
                 setNewProjectModal={setNewProjectModal}
                 setSearch={onSearch}
                 isEmptyFolder={isEmptyFolder}
-              />
+              /> */}
               {isEmptyFolder ? (
                 <EmptyFolder setOpenModal={setNewProjectModal} />
               ) : (

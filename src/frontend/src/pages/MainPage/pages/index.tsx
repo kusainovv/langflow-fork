@@ -58,6 +58,7 @@ export default function CollectionPage(): JSX.Element {
 
   return (
     <SidebarProvider width="280px">
+      {/* <h1>main page test</h1> */}
       {flows &&
         examples &&
         folders &&

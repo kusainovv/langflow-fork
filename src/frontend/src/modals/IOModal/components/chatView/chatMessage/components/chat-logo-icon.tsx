@@ -4,7 +4,7 @@ import { ENABLE_NEW_LOGO } from "@/customization/feature-flags";
 
 export default function LogoIcon() {
   return (
-    <div className="relative flex h-8 w-8 items-center justify-center   bg-muted">
+    <div className="relative flex h-8 w-8 items-center justify-center    ">
       <div className="flex h-8 w-8 items-center justify-center">
         {ENABLE_NEW_LOGO ? (
           <LangflowLogo

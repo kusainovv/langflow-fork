@@ -27,7 +27,7 @@ export const MarkdownField = ({
         rehypePlugins={[rehypeMathjax]}
         className={cn(
           "markdown prose flex w-fit max-w-full flex-col items-baseline text-xs font-normal word-break-break-word dark:prose-invert",
-          isEmpty ? "text-muted-foreground" : "text-black",
+          isEmpty ? "  " : "text-black",
         )}
         components={{
           p({ node, ...props }) {

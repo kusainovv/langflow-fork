@@ -13,7 +13,7 @@ const inputClasses = {
     `w-full ${isFocused ? "" : "pr-3"} ${password ? "pr-16" : ""}`,
   editNode: "input-edit-node",
   normal: ({ isFocused }: { isFocused: boolean }) =>
-    `primary-input ${isFocused ? "text-black" : "text-muted-foreground"}`,
+    `primary-input ${isFocused ? "text-black" : "  "}`,
   disabled: "disabled-state",
   password: "password",
 };
@@ -100,7 +100,7 @@ export default function TextAreaComponent({
             background: isFocused
               ? undefined
               : disabled
-                ? "bg-silver"
+                ? ""
                 : GRADIENT_CLASS,
           }}
           aria-hidden="true"
@@ -111,14 +111,14 @@ export default function TextAreaComponent({
         dataTestId={`button_open_text_area_modal_${id}${editNode ? "_advanced" : ""}`}
         name={getIconName(disabled, "", "", false, isToolMode) || "Scan"}
         className={cn(
-          "cursor-pointer bg-silver",
+          "cursor-pointer",
           externalLinkIconClasses.icon,
           editNode
             ? externalLinkIconClasses.editNodeTop
             : externalLinkIconClasses.iconTop,
           disabled
-            ? "bg-muted text-placeholder-foreground"
-            : "bg-silver text-foreground",
+            ? ""
+            : "text-foreground",
         )}
       />
     </div>
@@ -162,7 +162,7 @@ export default function TextAreaComponent({
               editNode ? "top-[5px]" : "top-[13px]",
               disabled
                 ? "text-placeholder"
-                : "text-placeholder-foreground hover:text-foreground",
+                : "hover:text-foreground",
               "right-10",
             )}
           />

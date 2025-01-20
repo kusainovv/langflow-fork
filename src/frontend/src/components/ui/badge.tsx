@@ -12,12 +12,12 @@ const badgeVariants = cva(
         gray: "bg-border hover:bg-border/80 text-black",
         secondary:
           "bg-secondary hover:bg-secondary/80 border-transparent text-black",
-        destructive:
-          "bg-destructive hover:bg-destructive/80 border-transparent text-destructive-foreground",
+        // destructive:
+        //   "bg-destructive hover:bg-destructive/80 border-transparent  -foreground",
         outline: "text-black/80 border-ring/60",
-        secondaryStatic: "bg-muted text-muted-foreground border-0",
+        secondaryStatic: "     border-0",
         successStatic:
-          "bg-accent-emerald text-white border-0",
+          " -emerald text-white border-0",
         errorStatic: "bg-error-background text-error-foreground border-0",
       },
       size: {

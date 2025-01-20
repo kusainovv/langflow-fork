@@ -32,7 +32,7 @@ export const ThemeButtons = () => {
   return (
     <div className="relative ml-auto inline-flex   border border-border p-0.5">
       {/* Sliding Indicator - Behind the Buttons */}
-      <div
+      {/* <div
         className={`absolute bottom-0.5 left-[1px] top-0.5 w-[30%]   bg-amber-400 ${
           hasInteracted ? "transition-all duration-300" : ""
         } dark:bg-purple-400`}
@@ -46,10 +46,10 @@ export const ThemeButtons = () => {
           })`,
           zIndex: 0, // Ensure it's behind the buttons
         }}
-      ></div>
+      ></div> */}
 
       {/* Light Theme Button */}
-      <Button
+      {/* <Button
         unstyled
         className={`relative z-10 inline-flex items-center   px-1 ${
           selectedTheme === "light"
@@ -59,10 +59,10 @@ export const ThemeButtons = () => {
         onClick={() => handleThemeChange("light")}
       >
         <ForwardedIconComponent name="Sun" className="w-4" />
-      </Button>
+      </Button> */}
 
       {/* Dark Theme Button */}
-      <Button
+      {/* <Button
         unstyled
         className={`relative z-10 mx-1 inline-flex items-center   px-1 ${
           selectedTheme === "dark"
@@ -72,10 +72,10 @@ export const ThemeButtons = () => {
         onClick={() => handleThemeChange("dark")}
       >
         <ForwardedIconComponent name="Moon" className="w-4" />
-      </Button>
+      </Button> */}
 
       {/* System Theme Button */}
-      <Button
+      {/* <Button
         unstyled
         className={`relative z-10 inline-flex items-center   px-1 ${
           selectedTheme === "system"
@@ -85,7 +85,7 @@ export const ThemeButtons = () => {
         onClick={() => handleThemeChange("system")}
       >
         <ForwardedIconComponent name="Monitor" className="w-4" />
-      </Button>
+      </Button> */}
     </div>
   );
 };

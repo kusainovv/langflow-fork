@@ -241,29 +241,23 @@ export default function CodeAreaModal({
               className="h-full min-w-full   border-[1px] border-gray-300 custom-scroll dark:border-gray-600"
             />
           </div>
-          <div
-            className={
-              "whitespace-break-spaces transition-all delay-500" +
-              (error?.detail?.error !== undefined ? "h-2/6" : "h-0")
-            }
-          >
-            <div className="mt-5 h-full max-h-[10rem] w-full overflow-y-auto overflow-x-clip text-left custom-scroll">
+      
+            <div className="w-full overflow-y-auto overflow-x-clip text-left custom-scroll">
               <h1
                 data-testid="title_error_code_modal"
                 className="text-lg text-error"
               >
                 {error?.detail?.error}
               </h1>
-              <div className="ml-2 mt-2 w-full text-sm text-destructive word-break-break-word">
+              <div className="ml-2 mt-2 w-full text-sm   word-break-break-word">
                 <span className="w-full word-break-break-word">
                   {error?.detail?.traceback}
                 </span>
               </div>
             </div>
-          </div>
           <div className="flex h-fit w-full justify-end">
             <Button
-              className="mt-3"
+              className="mb-2 mr-2"
               onClick={processCode}
               type="submit"
               id="checkAndSaveBtn"

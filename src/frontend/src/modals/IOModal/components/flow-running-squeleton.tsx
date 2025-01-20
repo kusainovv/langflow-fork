@@ -7,8 +7,8 @@ export default function FlowRunningSqueleton() {
       <LogoIcon />
       <div className="flex items-center">
         <div>
-          <TextShimmer className="" duration={1}>
-            Flow running...
+          <TextShimmer className="text-white" duration={1}>
+            Thinking...
           </TextShimmer>
         </div>
       </div>

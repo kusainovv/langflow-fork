@@ -28,7 +28,7 @@ export function Nav({ categories, currentTab, setCurrentTab }: NavProps) {
         >
           <SidebarTrigger
             className={cn(
-              "flex h-8 shrink-0 items-center   text-lg font-semibold leading-none tracking-tight text-black outline-none ring-ring transition-[margin,opa] duration-200 ease-linear focus-visible:ring-1 md:hidden [&>svg]:size-4 [&>svg]:shrink-0",
+              "flex h-8 shrink-0 items-center   text-lg   leading-none tracking-tight text-black outline-none ring-ring transition-[margin,opa] duration-200 ease-linear focus-visible:ring-1 md:hidden [&>svg]:size-4 [&>svg]:shrink-0",
             )}
           />
           <div
@@ -47,7 +47,7 @@ export function Nav({ categories, currentTab, setCurrentTab }: NavProps) {
               className={`${
                 index === 0
                   ? "hidden"
-                  : "mb-1 text-sm font-semibold text-muted-foreground"
+                  : "mb-1 text-sm     "
               }`}
             >
               {category.title}
@@ -66,8 +66,8 @@ export function Nav({ categories, currentTab, setCurrentTab }: NavProps) {
                         name={link.icon}
                         className={`h-4 w-4 stroke-2 ${
                           currentTab === link.id
-                            ? "text-accent-pink-foreground"
-                            : "text-muted-foreground"
+                            ? ""
+                            : "  "
                         }`}
                       />
                       <span

@@ -136,7 +136,7 @@ export default function MultiselectComponent({
   );
 
   const renderSearchInput = () => (
-    <div className="flex items-center border-b px-3">
+    <div className="flex items-center border-b px-3 !bg-red-500">
       <ForwardedIconComponent
         name="search"
         className="mr-2 h-4 w-4 shrink-0 opacity-50"
@@ -146,7 +146,7 @@ export default function MultiselectComponent({
           setSearchValue(event.target.value);
         }}
         placeholder="Search options..."
-        className="flex h-9 w-full   bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
+        className="flex h-9 w-full   bg-transparent py-3 text-sm outline-none placeholder:   disabled:cursor-not-allowed disabled:opacity-50"
       />
       <Button
         unstyled
@@ -175,7 +175,7 @@ export default function MultiselectComponent({
                 data-testid={`${option}-${id ?? ""}-option`}
               >
                 {(customValues.includes(option) || searchValue === option) && (
-                  <span className="text-muted-foreground">Text:&nbsp;</span>
+                  <span className="  ">Text:&nbsp;</span>
                 )}
                 <span className="truncate">{option}</span>
                 <ForwardedIconComponent

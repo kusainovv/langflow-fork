@@ -91,7 +91,7 @@ export default function CollectionCardComponent({
         className={cn(
           "group relative flex h-[11rem] flex-col justify-between overflow-hidden",
           !data.is_component &&
-            "hover:bg-muted/50 hover:shadow-md hover:dark:bg-[#5f5f5f0e]",
+            "",
           disabled ? "pointer-events-none opacity-50" : "",
           onClick ? "cursor-pointer" : "",
           isSelectedCard ? "border border-selected" : "",
@@ -159,7 +159,7 @@ export default function CollectionCardComponent({
                   tabIndex={-1}
                   variant="primary"
                   size="sm"
-                  className="gap-2 whitespace-nowrap bg-muted"
+                  className="gap-2 whitespace-nowrap  "
                   data-testid={"playground-flow-button-" + data.id}
                   onClick={handlePlaygroundClick}
                 >

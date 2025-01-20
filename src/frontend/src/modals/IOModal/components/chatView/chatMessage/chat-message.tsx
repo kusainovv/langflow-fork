@@ -216,7 +216,7 @@ export default function ChatMessage({
   };
 
   const editedFlag = chat.edit ? (
-    <div className="text-xs text-muted-foreground">(Edited)</div>
+    <div className="text-xs   ">(Edited)</div>
   ) : null;
 
   if (chat.category === "error") {
@@ -407,7 +407,7 @@ export default function ChatMessage({
                     <>
                       <div
                         className={`w-full items-baseline whitespace-pre-wrap break-words text-xs ${
-                          isEmpty ? "text-muted-foreground" : "text-black"
+                          isEmpty ? "  " : "text-black"
                         }`}
                         data-testid={`chat-message-${chat.sender_name}-${chatMessage}`}
                       >

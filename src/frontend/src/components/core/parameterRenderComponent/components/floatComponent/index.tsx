@@ -63,12 +63,12 @@ export default function FloatComponent({
   };
 
   const iconClassName =
-    "text-placeholder-foreground h-3 w-3 group-increment-hover:text-black group-decrement-hover:text-black transition-colors";
+    "h-3 w-3 group-increment-hover:text-black group-decrement-hover:text-black transition-colors";
   const stepperClassName = "w-5 border-l-[1px]";
   const incrementStepperClassName =
-    "border-b-[1px] hover:bg-muted group-increment";
+    "border-b-[1px] hover:  group-increment";
   const decrementStepperClassName =
-    "hover:bg-muted group-decrement";
+    "hover:  group-decrement";
   const inputRef = useRef(null);
 
   return (

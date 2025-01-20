@@ -54,7 +54,7 @@ export default function ChatView({
   const inputTypes = inputs.map((obj) => obj.type);
   const updateFlowPool = useFlowStore((state) => state.updateFlowPool);
   const setChatValueStore = useUtilityStore((state) => state.setChatValueStore);
-  const isTabHidden = useTabVisibility();
+  // const isTabHidden = useTabVisibility();
 
   //build chat history
   useEffect(() => {
@@ -100,13 +100,13 @@ export default function ChatView({
       return new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime();
     });
 
-    if (messages.length === 0 && !lockChat && chatInputNode && isTabHidden) {
-      setChatValueStore(
-        chatInputNode.data.node.template["input_value"].value ?? "",
-      );
-    } else {
-      isTabHidden ? setChatValueStore("") : null;
-    }
+    // if (messages.length === 0 && !lockChat && chatInputNode) {
+    //   setChatValueStore(
+    //     chatInputNode.data.node.template["input_value"].value ?? "",
+    //   );
+    // } else {
+    //   // isTabHidden ? setChatValueStore("") : null;
+    // }
 
     setChatHistory(finalChatHistory);
   }, [flowPool, messages, visibleSession]);
@@ -194,11 +194,11 @@ export default function ChatView({
                   />
                 )}
                 <div className="flex flex-col items-center justify-center">
-                  <h3 className="mt-2 pb-2 text-2xl font-semibold text-black">
+                  <h3 className="mt-2 pb-2 text-2xl   text-black">
                     New chat
                   </h3>
                   <p
-                    className="text-lg text-muted-foreground"
+                    className="text-lg   "
                     data-testid="new-chat-text"
                   >
                     <TextEffectPerChar>
@@ -215,7 +215,7 @@ export default function ChatView({
               ? "w-full max-w-[768px] py-4 word-break-break-word md:w-5/6"
               : ""
           }
-          ref={ref}
+          // ref={ref}
         >
           {displayLoadingMessage &&
             !(chatHistory?.[chatHistory.length - 1]?.category === "error") &&

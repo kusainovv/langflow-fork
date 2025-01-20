@@ -76,7 +76,7 @@ const IOKeyPairInput = ({
                   >
                     <IconComponent
                       name="Plus"
-                      className={"h-4 w-4 hover:text-accent-foreground"}
+                      className={"h-4 w-4 hover:  "}
                     />
                   </button>
                 ) : isList && isInputField ? (

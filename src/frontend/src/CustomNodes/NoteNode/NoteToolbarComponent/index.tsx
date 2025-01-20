@@ -112,7 +112,7 @@ const NoteToolbarComponent = memo(function NoteToolbarComponent({
               <div>
                 <div
                   data-testid="color_picker"
-                  className="relative inline-flex items-center bg-silver px-2 py-2 text-foreground shadow-md transition-all duration-500 ease-in-out hover:bg-muted focus:z-10"
+                  className="relative inline-flex items-center bg-silver px-2 py-2 text-foreground shadow-md transition-all duration-500 ease-in-out hover:  focus:z-10"
                 >
                   <div
                     style={colorPickerStyle}
@@ -141,7 +141,7 @@ const NoteToolbarComponent = memo(function NoteToolbarComponent({
                 <div
                   data-testid="more-options-modal"
                   className={classNames(
-                    "relative -ml-px inline-flex h-8 w-[2rem] items-center bg-silver text-foreground shadow-md transition-all duration-500 ease-in-out hover:bg-muted focus:z-10",
+                    "relative -ml-px inline-flex h-8 w-[2rem] items-center bg-silver text-foreground shadow-md transition-all duration-500 ease-in-out hover:  focus:z-10",
                   )}
                 >
                   <IconComponent

@@ -100,12 +100,12 @@ export const AccountMenu = () => {
             </HeaderMenuItemsSection>
           )}
           <HeaderMenuItemsSection>
-            <div className="flex h-[46px] w-full items-center justify-between px-3">
+            {/* <div className="flex h-[46px] w-full items-center justify-between px-3">
               <div className="pl-1 text-xs text-zinc-500">
                 Version {version}
               </div>
               {!ENABLE_DATASTAX_LANGFLOW && <ThemeButtons />}
-            </div>
+            </div> */}
             {ENABLE_DATASTAX_LANGFLOW ? (
               <HeaderMenuItemLink newPage href={`/settings/org/${id}/overview`}>
                 Account Settings
@@ -139,7 +139,7 @@ export const AccountMenu = () => {
               </HeaderMenuItemLink>
             )} */}
           </HeaderMenuItemsSection>
-          <HeaderMenuItemsSection>
+          {/* <HeaderMenuItemsSection> */}
             {/* {ENABLE_DATASTAX_LANGFLOW ? (
               <HeaderMenuItemLink
                 newPage
@@ -158,13 +158,13 @@ export const AccountMenu = () => {
                 Share Feedback on Github
               </HeaderMenuItemLink>
             )} */}
-            <HeaderMenuItemLink newPage href="https://twitter.com/langflow_ai">
+            {/* <HeaderMenuItemLink newPage href="https://twitter.com/langflow_ai">
               Follow Langflow on X
-            </HeaderMenuItemLink>
-            <HeaderMenuItemLink newPage href="https://discord.gg/EqksyE2EX9">
-              Join the Langflow Discord
-            </HeaderMenuItemLink>
-          </HeaderMenuItemsSection>
+            </HeaderMenuItemLink> */}
+            {/* <HeaderMenuItemLink newPage href="https://discord.gg/EqksyE2EX9"> */}
+              {/* Join the Langflow Discord */}
+            {/* </HeaderMenuItemLink> */}
+          {/* </HeaderMenuItemsSection> */}
           {ENABLE_DATASTAX_LANGFLOW ? (
             <HeaderMenuItemsSection>
               <HeaderMenuItemLink href="/session/logout" icon="log-out">

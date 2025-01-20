@@ -166,6 +166,7 @@ export default function EditShortcutButton({
           className="h-6 w-6 pl-1 text-black"
           aria-hidden="true"
         />
+        <h1>shortcuts</h1>
       </BaseModal.Header>
       <BaseModal.Trigger>{children}</BaseModal.Trigger>
       <BaseModal.Content>

@@ -132,7 +132,7 @@ export const SidebarDraggableComponent = forwardRef(
                 "group/draggable flex cursor-grab items-center gap-2 p-3 shadow-sidebar-item-deactivated",
                 error && "cursor-not-allowed select-none",
                 disabled
-                  ? "pointer-events-none text-placeholder-foreground"
+                  ? "pointer-events-none"
                   : "text-black",
               )}
               draggable={!error}
@@ -200,7 +200,7 @@ export const SidebarDraggableComponent = forwardRef(
                 <div ref={popoverRef}>
                   <ForwardedIconComponent
                     name="GripVertical"
-                    className="h-4 w-4 shrink-0 text-muted-foreground group-hover/draggable:text-black"
+                    className="h-4 w-4 shrink-0    group-hover/draggable:text-black"
                   />
                   <SelectTrigger tabIndex={-1}></SelectTrigger>
                   <SelectContent

@@ -35,18 +35,18 @@ export const ButtonInputList = ({
         className={cn(
           "hit-area-icon group flex items-center justify-center text-center",
           disabled
-            ? "pointer-events-none bg-silver hover:bg-silver"
+            ? "pointer-events-none"
             : "",
           (index === 0 && value.length <= 1) || addIcon
-            ? "bg-silver hover:bg-muted"
-            : "hover:bg-smooth-red",
+            ? ""
+            : "",
         )}
       >
         <Button
           unstyled
           size="icon"
           className={cn(
-            "hit-area-icon flex items-center justify-center",
+            "hit-area-icon flex items-center justify-center shadow-button",
             getButtonClassName(disabled),
           )}
           data-testid={getTestId(
@@ -62,7 +62,7 @@ export const ButtonInputList = ({
               (index === 0 && value.length <= 1) || addIcon ? "Plus" : "Trash2"
             }
             className={cn(
-              "icon-size justify-self-center text-muted-foreground",
+              "icon-size justify-self-center   ",
               !disabled && "hover:cursor-pointer hover:text-foreground",
               (index === 0 && value.length <= 1) || addIcon
                 ? "group-hover:text-foreground"

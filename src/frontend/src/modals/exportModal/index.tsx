@@ -98,7 +98,7 @@ const ExportModal = forwardRef(
               {SAVE_WITH_API_CHECKBOX}
             </label>
           </div>
-          <span className="mt-1 text-xs text-destructive">
+          <span className="mt-1 text-xs  ">
             {ALERT_SAVE_WITH_API}
           </span>
         </BaseModal.Content>

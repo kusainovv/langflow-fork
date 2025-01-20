@@ -118,12 +118,12 @@ const InspectButton = memo(
           "icon-size",
           isToolMode
             ? displayOutputPreview && !unknownOutput
-              ? "text-white hover:text-black"
-              : "cursor-not-allowed text-white"
+              ? "text-black"
+              : "cursor-not-allowed text-black"
             : displayOutputPreview && !unknownOutput
-              ? "text-white hover:text-black"
-              : "cursor-not-allowed text-white",
-          errorOutput ? "text-destructive" : "",
+              ? "text-black"
+              : "cursor-not-allowed text-black",
+          errorOutput ? " " : "",
         )}
       />
     </Button>
@@ -268,7 +268,7 @@ function NodeOutputField({
     <div
       ref={ref}
       className={cn(
-        "relative flex h-11 w-full flex-wrap items-center justify-between bg-navy px-5 py-2",
+        "relative flex h-11 w-full flex-wrap items-center justify-between px-5 py-2",
         isToolMode && "bg-silver",
       )}
     >
@@ -290,7 +290,7 @@ function NodeOutputField({
         )}
 
         <div className="flex items-center gap-2">
-          <span className={data.node?.frozen ? "text-white" : "text-white"}>
+          <span className={data.node?.frozen ? "text-black" : "text-black"}>
             <MemoizedOutputComponent
               proxy={outputProxy}
               idx={index}

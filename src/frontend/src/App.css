@@ -141,6 +141,10 @@ body {
   fill: none !important;
 }
 
+.react-flow__controls-button:hover {
+  background-color: var(--silver) !important;
+}
+
 .react-flow__edge .react-flow__edge-path {
   transition: color;
   stroke: var(--connection) !important;
@@ -207,4 +211,47 @@ code {
 .ag-large-text-input.ag-text-area.ag-input-field textarea {
   resize: none !important;
   height: 100% !important;
+}
+
+/* ag-root-wrapper ag-ltr ag-layout-normal */
+.ag-root-wrapper  {
+  /* background-color: red!important; */
+  font-family: "w95fa";
+  background-color: var(--light-gray)!important;
+}
+.ag-header-container {
+  background-color: var(--navy);
+  border-radius: 0px!important;
+}
+.ag-header.ag-pivot-off {
+  border-radius: 0px!important;
+}
+.ag-header-viewport  {
+  border-radius: 0px!important;
+}
+.ag-header-cell-text {
+  color: white;
+  font-family: "w95fa";
+}
+/* .ag-row-even ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-first ag-row-not-inline-editing { */
+.ag-row {
+  background-color: var(--light-gray)!important;
+}
+.ag-header-cell-resize {
+  display: none!important;
+}
+.ag-theme-alpine .ag-cell:hover {
+  background-color: var(--light-gray)!important;
+}
+.ag-theme-alpine .ag-cell:hover {
+  background-color: var(--light-gray)!important;
+}
+.ag-root, .ag-header, .ag-cell {
+  background-color: var(--light-gray)!important;
+}
+.ag-paging-panel.ag-unselectable.ag-focus-managed {
+  display: none!important;
+}
+.ag-icon.ag-icon-filter {
+  color: white!important;
 }

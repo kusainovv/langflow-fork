@@ -278,7 +278,7 @@ export default function PromptModal({
                     name="Braces"
                     className="flex h-4 w-4 text-black"
                   />
-                  <span className="text-md font-semibold text-black">
+                  <span className="text-md   text-black">
                     Prompt Variables:
                   </span>
 
@@ -306,7 +306,7 @@ export default function PromptModal({
                   ))}
                 </div>
               </div>
-              <span className="mt-2 text-xs text-muted-foreground">
+              <span className="mt-2 text-xs   ">
                 Prompt variables can be created with any chosen name inside
                 curly brackets, e.g. {"{variable_name}"}
               </span>

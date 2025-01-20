@@ -57,7 +57,7 @@ export default function TableOptions({
                   name="Copy"
                   className={cn(
                     "h-5 w-5 transition-all",
-                    hasSelection ? "text-black" : "text-muted-foreground",
+                    hasSelection ? "text-black" : "  ",
                   )}
                 />
               </Button>
@@ -86,7 +86,7 @@ export default function TableOptions({
                   className={cn(
                     "h-5 w-5 transition-all",
                     !hasSelection
-                      ? "text-muted-foreground"
+                      ? "  "
                       : "text-black hover:text-status-red",
                   )}
                 />
@@ -109,7 +109,7 @@ export default function TableOptions({
                 strokeWidth={2}
                 className={cn(
                   "h-5 w-5 transition-all",
-                  !stateChange ? "text-muted-foreground" : "text-black",
+                  !stateChange ? "  " : "text-black",
                 )}
               />
             </Button>

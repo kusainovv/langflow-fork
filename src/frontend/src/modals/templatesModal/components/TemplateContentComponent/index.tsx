@@ -78,7 +78,7 @@ export default function TemplateContentComponent({
       <div className="relative mx-3 flex-1 grow-0 py-px">
         <ForwardedIconComponent
           name="Search"
-          className="absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
+          className="absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2   "
         />
         <Input
           type="search"

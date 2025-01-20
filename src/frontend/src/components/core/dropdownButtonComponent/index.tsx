@@ -42,7 +42,7 @@ export default function DropdownButton({
             {firstButtonName}
             {dropdownOptions && (
               <div
-                className="absolute right-2 items-center text-muted-foreground"
+                className="absolute right-2 items-center   "
                 onClick={(event) => {
                   event.stopPropagation();
                   event.preventDefault();

@@ -29,7 +29,7 @@ export default function HandleTooltipComponent({
           {isConnecting ? (
             isCompatible ? (
               <span>
-                <span className="font-semibold">Connect</span> to
+                <span className=" ">Connect</span> to
               </span>
             ) : (
               <span>Incompatible with</span>

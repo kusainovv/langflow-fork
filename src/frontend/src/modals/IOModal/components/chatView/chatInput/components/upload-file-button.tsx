@@ -26,7 +26,7 @@ const UploadFileButton = ({
           className={`flex h-[32px] w-[32px] items-center justify-center font-bold transition-all ${
             lockChat
               ? "cursor-not-allowed"
-              : "text-muted-foreground hover:text-black"
+              : "   hover:text-black"
           }`}
           onClick={handleButtonClick}
           

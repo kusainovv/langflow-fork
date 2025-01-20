@@ -48,7 +48,7 @@ export const CustomControlButton = ({
           <IconComponent
             name={iconName}
             aria-hidden="true"
-            className={cn("scale-150 text-muted-foreground", iconClasses)}
+            className={cn("scale-150   ", iconClasses)}
           />
         </div>
       </ShadTooltip>
@@ -106,7 +106,7 @@ const CanvasControls = ({ children }) => {
   return (
     <Panel
       data-testid="canvas_controls"
-      className="react-flow__controls !m-2 flex !flex-row gap-1.5 border-secondary-hover bg-silver fill-foreground stroke-foreground p-1.5 text-black shadow [&>button]:border-0 [&>button]:bg-silver [&>button]:shadow-button hover:[&>button]:bg-accent"
+      className="react-flow__controls !m-2 flex !flex-row gap-1.5 bg-silver fill-foreground stroke-foreground p-1.5 text-black shadow [&>button]:border-0 [&>button]:bg-silver [&>button]:shadow-button "
       position="bottom-left"
     >
       {/* Zoom In */}
@@ -137,7 +137,6 @@ const CanvasControls = ({ children }) => {
         iconName={isInteractive ? "LockOpen" : "Lock"}
         tooltipText={isInteractive ? "Lock" : "Unlock"}
         onClick={onToggleInteractivity}
-        backgroundClasses={isInteractive ? "" : "bg-destructive"}
         iconClasses={
           isInteractive ? "" : "text-black-foreground dark:text-black"
         }

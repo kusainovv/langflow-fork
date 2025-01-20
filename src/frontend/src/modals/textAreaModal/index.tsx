@@ -38,7 +38,7 @@ export default function ComponentTextModal({
       <BaseModal.Trigger disable={disabled} asChild>
         {children}
       </BaseModal.Trigger>
-      <BaseModal.Header description={TEXT_DIALOG_SUBTITLE}>
+      <BaseModal.Header description={""}> {/**TEXT_DIALOG_SUBTITLE */}
         <div className="flex w-full items-start gap-3">
           <div className="flex">
             <span className="pr-2" data-testid="modal-title">

@@ -56,7 +56,7 @@ const OptionBadge = ({
   >
     <div className="truncate">{option}</div>
     <X
-      className="h-3 w-3 cursor-pointer bg-transparent hover:text-destructive"
+      className="h-3 w-3 cursor-pointer bg-transparent"
       onClick={(e) =>
         onRemove(e as unknown as React.MouseEvent<HTMLButtonElement>)
       }
@@ -119,7 +119,7 @@ const getInputClassName = (
     editNode && "px-2",
     editNode && disabled && "h-fit w-fit",
     disabled &&
-      "disabled:text-muted disabled:opacity-100 placeholder:disabled:text-muted-foreground",
+      "disabled:   disabled:opacity-100 placeholder:disabled:  ",
     password && "text-clip pr-14",
     selectedOptions?.length >= 0 && "cursor-default",
   );
@@ -134,7 +134,7 @@ const getAnchorClassName = (
     "primary-input noflow nopan nodelete nodrag flex h-full min-h-[2.375rem] cursor-default flex-wrap items-center px-2 ",
     editNode && "min-h-7 p-0 px-1",
     editNode && disabled && "min-h-5",
-    disabled && "bg-muted text-muted",
+    disabled && "    ",
     isFocused &&
       "ring-1 ring-foreground hover:border-foreground",
   );
@@ -229,7 +229,7 @@ const CustomInputPopover = ({
               variant={nodeStyle ? "emerald" : "secondary"}
               className={cn(
                 editNode && "text-xs",
-                nodeStyle ? "px-1 font-w95fa" : "bg-muted",
+                nodeStyle ? "px-1 font-w95fa" : " ",
               )}
             />
           ) : null}

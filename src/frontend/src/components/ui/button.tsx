@@ -10,24 +10,24 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-silver text-black-foreground  hover:bg-muted",
-        destructive:
-          "bg-destructive text-destructive-foreground hover:bg-muted",
+        default: "bg-silver text-black-foreground  hover: ",
+        // destructive:
+        //   "bg-destructive  -foreground hover: ",
         outline:
-          "border border-input hover:bg-muted ",
+          "border border-input hover:  ",
         primary:
-          "border bg-silver text-black hover:bg-muted",
+          "border bg-silver text-black hover: ",
         warning:
-          "bg-warning-foreground text-warning-text hover:bg-muted",
+          "bg-warning-foreground text-warning-text hover: ",
         secondary:
-          "border border-muted bg-muted text-black hover:bg-muted",
+          "border      text-black hover: ",
         ghost:
-          "text-foreground hover:bg-muted disabled:!bg-transparent",
+          "text-foreground hover:  disabled:!bg-transparent",
         ghostActive:
-          "bg-muted text-foreground hover:bg-muted",
-        menu: "hover:bg-muted focus:!ring-0 focus-visible:!ring-0",
+          "  text-foreground hover: ",
+        menu: "hover:  focus:!ring-0 focus-visible:!ring-0",
         "menu-active":
-          "font-semibold hover:bg-muted focus-visible:!ring-offset-0",
+          " focus-visible:!ring-offset-0",
         link: "underline-offset-4text-primary",
       },
       size: {

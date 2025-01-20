@@ -225,27 +225,27 @@ export default function IOModal({
     }
   }, [open]);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 1024) {
-        // 1024px is Tailwind's 'lg' breakpoint
-        setSidebarOpen(false);
-      } else {
-        setSidebarOpen(true);
-      }
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth < 1024) {
+  //       // 1024px is Tailwind's 'lg' breakpoint
+  //       setSidebarOpen(false);
+  //     } else {
+  //       setSidebarOpen(true);
+  //     }
+  //   };
 
-    // Initial check
-    handleResize();
+  //   // Initial check
+  //   handleResize();
 
-    // Add event listener
-    window.addEventListener("resize", handleResize);
+  //   // Add event listener
+  //   window.addEventListener("resize", handleResize);
 
-    // Cleanup
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   // Cleanup
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   return (
     <BaseModal
@@ -265,9 +265,9 @@ export default function IOModal({
             <div
               className={cn(
                 "flex bg-light-gray flex-shrink-0 flex-col min-w-[250px] justify-start transition-all duration-300",
-                sidebarOpen
-                  ? "absolute z-50 lg:relative lg:w-1/5 lg:max-w-[280px]"
-                  : "w-0",
+                // sidebarOpen
+                  // ? "absolute z-50 lg:relative lg:w-1/5 lg:max-w-[280px]"
+                  // : "",
                 "h-[calc(95vh-32px)] shadow-sidebar-chat"
               )}
             >
@@ -290,10 +290,10 @@ export default function IOModal({
                     </Button>
                   </ShadTooltip> */}
                   {sidebarOpen && (
-                    <div className="font-semibold">Chat</div>
+                    <div className=" ">Chat</div>
                   )}
                 </div>
-                {sidebarOpen && (
+                {/* {sidebarOpen && ( */}
                   <SidebarOpenView
                     sessions={sessions}
                     setSelectedViewField={setSelectedViewField}
@@ -302,7 +302,7 @@ export default function IOModal({
                     visibleSession={visibleSession}
                     selectedViewField={selectedViewField}
                   />
-                )}
+                {/* )} */}
               </div>
             </div>
             <div className="flex min-w-96 h-[calc(95vh-32px)] flex-grow bg-silver">

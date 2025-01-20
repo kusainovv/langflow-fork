@@ -102,7 +102,7 @@ export default function UserManagementModal({
               >
                 <Form.Label className="data-[invalid]:label-invalid">
                   Username{" "}
-                  <span className="font-medium text-destructive">*</span>
+                  <span className="font-medium  ">*</span>
                 </Form.Label>
               </div>
               <Form.Control asChild>
@@ -137,7 +137,7 @@ export default function UserManagementModal({
                   >
                     <Form.Label className="data-[invalid]:label-invalid flex">
                       Password{" "}
-                      <span className="ml-1 mr-1 font-medium text-destructive">
+                      <span className="ml-1 mr-1 font-medium  ">
                         *
                       </span>
                       {pwdVisible && (
@@ -195,7 +195,7 @@ export default function UserManagementModal({
                   >
                     <Form.Label className="data-[invalid]:label-invalid flex">
                       Confirm password{" "}
-                      <span className="ml-1 mr-1 font-medium text-destructive">
+                      <span className="ml-1 mr-1 font-medium  ">
                         *
                       </span>
                       {confirmPwdVisible && (

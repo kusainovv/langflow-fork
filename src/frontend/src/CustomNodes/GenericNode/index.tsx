@@ -54,7 +54,7 @@ const HiddenOutputsButton = memo(
       <ForwardedIconComponent
         name={showHiddenOutputs ? "EyeOff" : "Eye"}
         strokeWidth={1.5}
-        className="h-4 w-4 text-placeholder-foreground group-hover:text-foreground"
+        className="h-4 w-4 group-hover:text-foreground"
       />
     </Button>
   ),
@@ -362,7 +362,7 @@ function GenericNode({
         className={cn(
           borderColor,
           showNode ? "w-80" : `w-48`,
-          "generic-node-div group/node relative hover:shadow-md",
+          "generic-node-div group/node relative",
           !hasOutputs && "pb-4",
           "bg-light-gray"
         )}

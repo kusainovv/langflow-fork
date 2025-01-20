@@ -141,7 +141,7 @@ export default function UndrawCardComponent({
       className="h-64 w-80 cursor-pointer bg-silver pt-4"
     >
       <CardContent className="h-full w-full">
-        <div className="flex h-full w-full flex-col items-center justify-center   bg-muted p-1 align-middle">
+        <div className="flex h-full w-full flex-col items-center justify-center     p-1 align-middle">
           {selectImage()}
         </div>
       </CardContent>

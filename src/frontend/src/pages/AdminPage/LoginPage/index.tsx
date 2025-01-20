@@ -49,7 +49,7 @@ export default function LoginAdminPage() {
   }
 
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center bg-muted">
+    <div className="flex h-full w-full flex-col items-center justify-center  ">
       <div className="flex w-72 flex-col items-center justify-center gap-2">
         {ENABLE_NEW_LOGO ? (
           <LangflowLogo
@@ -59,7 +59,7 @@ export default function LoginAdminPage() {
         ) : (
           <span className="mb-4 text-5xl">⛓️</span>
         )}
-        <span className="mb-6 text-2xl font-semibold text-black">Admin</span>
+        <span className="mb-6 text-2xl   text-black">Admin</span>
         <Input
           onChange={({ target: { value } }) => {
             handleInput({ target: { name: "username", value } });

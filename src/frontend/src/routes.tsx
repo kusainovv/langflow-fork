@@ -147,12 +147,13 @@ const router = createBrowserRouter(
                   </Route>
                 </Route>
                 <Route path="settings" element={<SettingsPage />}>
-                  <Route
+                  {/* <Route
                     index
                     element={<CustomNavigate replace to={"general"} />}
-                  />
+                  /> */}
                   <Route
-                    path="global-variables"
+                    index
+                   // global-variables
                     element={<GlobalVariablesPage />}
                   />
                   <Route path="api-keys" element={<ApiKeysPage />} />

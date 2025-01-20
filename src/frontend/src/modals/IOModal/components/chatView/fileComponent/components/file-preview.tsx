@@ -28,7 +28,7 @@ export default function FilePreview({
           <div className="flex h-20 w-20 items-center justify-center   border border-ring bg-silver">
             {/* <svg
               aria-hidden="true"
-              className={`h-10 w-10 animate-spin fill-black text-muted`}
+              className={`h-10 w-10 animate-spin fill-black   `}
               viewBox="0 0 100 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ export default function FilePreview({
         <div
           className={`relative mt-2 ${
             isImage ? "h-20 w-32" : "h-20 w-32"
-          } cursor-pointer   border border-border bg-silver transition duration-300 group-hover:shadow-md`}
+          } cursor-pointer   border border-border bg-silver transition duration-300`}
         >
           {isImage ? (
             <img
@@ -108,7 +108,7 @@ export default function FilePreview({
             className={`absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center opacity-100 transition-opacity`}
           >
             <div
-              className="group flex h-7 w-7 cursor-pointer items-center justify-center   bg-muted p-2 transition-all hover:bg-input"
+              className="group flex h-7 w-7 cursor-pointer items-center justify-center     p-2 transition-all hover:bg-input"
               onClick={onDelete}
             >
               <IconComponent
